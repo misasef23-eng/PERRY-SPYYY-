@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<!-- saved from url=(0343)https://nmstudio-gods-eye-view.vercel.app/#v=2&lat=30.2672&lon=-97.7431&alt=600&heading=15&pitch=-30&roll=360&style=normal&bloom=0&sharpen=1&bi=0&bv=2&si=49&hud=tactical&hv=1&dm=DENSE&dd=75&da=elastic&kf=7&ko=1&cr=0&sc=1&scf=11&map=esri-imagery&l=&lo=f.e.1_k.o.n&ui=c.c.1_c.p.0_l.c.1_l.p.0_d.c.1_v.c.1_i.c.0_t.c.1_r.c.1_s.c.1_g.c.1_p.c.1_m.c.0 -->
+<html lang="en" dir="ltr" data-gev-style="normal" style="--pp-label-chars: 10; --cyber-sonar-ring-step: 12.5%; --cyber-sonar-size-vw: 80vw; --cyber-sonar-size-vh: 104vh; --cyber-sonar-visual-intensity: 0.57; --cyber-sonar-sector-quarter: 6deg; --cyber-sonar-sector-middle: 14.399999999999999deg; --cyber-sonar-sector-width: 24deg;" data-cyber-sonar-rings="8" data-cyber-sonar-range="100" data-cyber-sonar-intensity="70" data-cyber-sonar-opacity="84" data-cyber-sonar-sector="24" data-cyber-sonar-gpu="supported"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/widgets.css">
+  <script src="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/Cesium.js"></script>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N&amp;Mstudio_ GOD's EYE VIEW · Global Intelligence Console</title>
+  <meta name="description" content="N&amp;Mstudio_ GOD&#39;s EYE VIEW — Real-time spatial intelligence &amp; 3D Earth reconnaissance console. Hotline/Zalo: 0985578385">
+  <meta name="theme-color" content="#00f6ff">
+  <meta property="og:title" content="N&amp;Mstudio_ GOD&#39;s EYE VIEW">
+  <meta property="og:description" content="Real-time multi-spectrum intelligence console powered by N&amp;M Studio. Hotline/Zalo: 0985578385">
+  <meta property="og:image" content="/nm-logo.png">
+  <link rel="icon" type="image/png" href="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/nm-logo.png">
+  <link rel="apple-touch-icon" href="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/nm-logo.png">
+  <link rel="manifest" href="https://nmstudio-gods-eye-view.vercel.app/manifest.webmanifest">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="N&amp;M Gods Eye">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/css2" rel="stylesheet">
+  <!-- Icon font subset to the glyphs this app renders. Keep `icon_names` in sync
+       with the sources: src/materialSymbolsSubset.test.mjs fails when a source
+       names a glyph this list is missing, because a missing glyph does not draw
+       a box — the ligature never forms and the element renders the literal word. -->
+  <link href="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/css2(1)" rel="stylesheet">
+  <script type="module" crossorigin="" src="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/index-B5fhJQJq.js"></script>
+  <link rel="stylesheet" crossorigin="" href="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/index-BU0glLjO.css">
+<style>
+.cesium-credit-lightbox-overlay {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(80, 80, 80, 0.8);
+}
+
+.cesium-credit-lightbox {
+  background-color: #303336;
+  color: #ffffff;
+  position: relative;
+  min-height: 100px;
+  margin: auto;
+}
+.cesium-credit-lightbox > ul > li a,
+.cesium-credit-lightbox > ul > li a:visited,
+.cesium-credit-wrapper a,
+.cesium-credit-wrapper a:visited {
+  color: #ffffff;
+}
+.cesium-credit-lightbox > ul > li a:hover {
+  color: #48b;
+}
+.cesium-credit-lightbox.cesium-credit-lightbox-expanded {
+  border: 1px solid #444;
+  border-radius: 5px;
+  max-width: 470px;
+}
+.cesium-credit-lightbox.cesium-credit-lightbox-mobile {
+  height: 100%;
+  width: 100%;
+}
+.cesium-credit-lightbox-title {
+  padding: 20px 20px 0 20px;
+}
+.cesium-credit-lightbox-close {
+  font-size: 18pt;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 6px;
+  color: #ffffff;
+}
+.cesium-credit-lightbox-close:hover {
+  color: #48b;
+}
+.cesium-credit-lightbox > ul {
+  margin: 0;
+  padding: 12px 20px 12px 40px;
+  font-size: 13px;
+}
+.cesium-credit-lightbox > ul > li {
+  padding-bottom: 6px;
+}
+.cesium-credit-lightbox > ul > li * {
+  padding: 0;
+  margin: 0;
+}
+
+.cesium-credit-expand-link {
+  padding-left: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #ffffff;
+}
+.cesium-credit-expand-link:hover {
+  color: #48b;
+}
+
+.cesium-credit-text {
+  color: #ffffff;
+}
+
+.cesium-credit-delimiter {
+  padding: 0 5px;
+}
+
+.cesium-credit-textContainer *,
+.cesium-credit-logoContainer * {
+  display: inline;
+}
+
+.cesium-credit-textContainer a:hover {
+  color: #48b
+}
+
+.cesium-credit-textContainer .cesium-credit-wrapper:first-of-type {
+  padding-left: 5px;
+}
+</style><style id="gev-screen-whiteboard-styles">
+  .gev-screen-whiteboard { position: fixed; inset: 0; pointer-events: none; z-index: 90; }
+  .gev-screen-whiteboard-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  /* No CSS opacity transition here on purpose: group opacity is driven per-frame in JS
+     (the 260ms fade-in via computeAlpha, and the tracked-entity z-order ease). A CSS
+     transition fought those per-frame writes and made the tracked-fade opacity oscillate
+     (flicker). Fade-OUT keeps its own transition via .gev-anno.gev-out below. */
+  .gev-anno-ring { filter: drop-shadow(0 0 6px currentColor); }
+  .gev-anno-dot { filter: drop-shadow(0 0 5px rgba(255,255,255,0.6)); }
+  .gev-anno-area { filter: drop-shadow(0 0 5px currentColor); }
+  .gev-anno-arrow { filter: drop-shadow(0 0 4px currentColor); stroke-linecap: round; }
+  .gev-anno-leader { stroke-dasharray: 2 3; }
+  .gev-anno-card { fill: rgba(8,18,28,0.78); stroke: rgba(255,255,255,0.14); stroke-width: 1; }
+  .gev-anno-text { fill: #eaf6ff; font: 600 13px "JetBrains Mono", ui-monospace, monospace; letter-spacing: 0.02em; }
+  /* draw-on: outlined shapes reveal their stroke */
+  .gev-draw { stroke-dasharray: 1400; stroke-dashoffset: 1400; }
+  .gev-anno.gev-in .gev-draw { transition: stroke-dashoffset 900ms ease-out; stroke-dashoffset: 0; }
+  /* opacity-only fade-in: a CSS transform here would override the SVG transform
+     attribute used to POSITION the callout and snap it to 0,0. */
+  .gev-anno-callout { opacity: 0; }
+  .gev-anno.gev-in .gev-anno-callout { animation: gev-pop 320ms ease-out both; }
+  .gev-anno.gev-out { opacity: 0 !important; transition: opacity 320ms ease; }
+  .gev-pulse { animation: gev-ring-pulse 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes gev-ring-pulse { 0%,100% { opacity: 0.9; stroke-width: 2; } 50% { opacity: 0.35; stroke-width: 3.5; } }
+  @keyframes gev-pop { from { opacity: 0; } to { opacity: 1; } }
+  </style><style>.--savior-overlay-transform-reset {
+  transform: none !important;
+}
+.--savior-overlay-z-index-top {
+  z-index: 2147483643 !important;
+}
+.--savior-overlay-position-relative {
+  position: relative;
+}
+.--savior-overlay-position-static {
+  position: static !important;
+}
+.--savior-overlay-overflow-hidden {
+  overflow: hidden !important;
+}
+.--savior-overlay-overflow-x-visible {
+  overflow-x: visible !important;
+}
+.--savior-overlay-overflow-y-visible {
+  overflow-y: visible !important;
+}
+.--savior-overlay-z-index-reset {
+  z-index: auto !important;
+}
+.--savior-overlay-display-none {
+  display: none !important;
+}
+.--savior-overlay-clearfix {
+  clear: both;
+}
+.--savior-overlay-reset-filter {
+  filter: none !important;
+  backdrop-filter: none !important;
+}
+.--savior-tooltip-host {
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+}
+/*Override css styles for Twitch.tv*/
+main.--savior-overlay-z-index-reset {
+  z-index: auto !important;
+}
+.modal__backdrop.--savior-overlay-z-index-reset {
+  position: static !important;
+}
+main.--savior-overlay-z-index-top {
+  z-index: auto !important;
+}
+main.--savior-overlay-z-index-top .channel-root__player-container + div,
+main.--savior-overlay-z-index-top .video-player-hosting-ui__container + div {
+  opacity: 0.1;
+}
+/*Dirty hack for facebook big video page e.g: https://www.facebook.com/abc/videos/...*/
+.--savior-backdrop {
+  position: fixed !important;
+  z-index: 2147483642 !important;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw !important;
+  background-color: rgba(0,0,0,0.9);
+}
+.--savior-overlay-twitter-video-player {
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+}
+.--savior-overlay-z-index-reset [class*="DivSideNavContainer"],
+.--savior-overlay-z-index-reset [class*="DivHeaderContainer"],
+.--savior-overlay-z-index-reset [class*="DivBottomContainer"],
+.--savior-overlay-z-index-reset [class*="DivCategoryListWrapper"],
+.--savior-overlay-z-index-reset [data-testid="sidebarColumn"],
+.--savior-overlay-z-index-reset header[role="banner"],
+.--savior-overlay-z-index-reset [data-testid="cellInnerDiv"]:not(.--savior-overlay-z-index-reset),
+.--savior-overlay-z-index-reset [aria-label="Home timeline"]>div:first-child,
+.--savior-overlay-z-index-reset [aria-label="Home timeline"]>div:nth-child(3) {
+  z-index: -1 !important;
+}
+.--savior-overlay-z-index-reset [data-testid="cellInnerDiv"] .--savior-backdrop+div {
+  z-index: 2147483643 !important;
+}
+.--savior-overlay-z-index-reset [data-testid="primaryColumn"]>[aria-label="Home timeline"] {
+  z-index: 0 !important;
+}
+.--savior-overlay-z-index-reset#mtLayer,
+.--savior-overlay-z-index-reset.media-layer {
+  z-index: 3000 !important;
+}
+.--savior-overlay-position-relative [class*="SecBar_secBar_"],
+.--savior-overlay-position-relative .woo-box-flex [class*="Frame_top_"] {
+  z-index: 0 !important;
+}
+.--savior-overlay-position-relative .vue-recycle-scroller__item-view:not(.--savior-overlay-z-index-reset),
+.--savior-overlay-position-relative .woo-panel-main[class*="BackTop_main_"],
+.--savior-overlay-position-relative [class*="Main_side_"] {
+  z-index: -1 !important;
+}
+/* Fix conflict css with zingmp3 */
+.zm-video-modal.--savior-overlay-z-index-reset {
+  position: absolute;
+}
+/* Dirty hack for xvideos99 */
+#page #main.--savior-overlay-z-index-reset {
+  z-index: auto !important;
+}
+/* Overlay for ok.ru */
+#vp_w.--savior-overlay-z-index-reset.media-layer.media-layer__video {
+  overflow-y: hidden;
+  z-index: 2147483643 !important;
+}
+/* Fix missing controller for tv.naver.com */
+.--savior-overlay-z-index-top.rmc_controller,
+.--savior-overlay-z-index-top.rmc_setting_intro,
+.--savior-overlay-z-index-top.rmc_highlight,
+.--savior-overlay-z-index-top.rmc_control_settings {
+  z-index: 2147483644 !important;
+}
+/* Dirty hack for douyi.com */
+.swiper-wrapper.--savior-overlay-z-index-reset .swiper-slide:not(.swiper-slide-active),
+.swiper-wrapper.--savior-overlay-transform-reset .swiper-slide:not(.swiper-slide-active) {
+  display: none;
+}
+.videoWrap + div > div {
+  pointer-events: unset;
+}
+/* Dirty hack for fpt.ai */
+.mfp-wrap.--savior-overlay-z-index-top {
+  position: relative;
+}
+.mfp-wrap.--savior-overlay-z-index-top .mfp-close {
+  display: none;
+}
+.mfp-wrap.--savior-overlay-z-index-top .mfp-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset + nav {
+  z-index: -1 !important;
+}
+section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset section.--savior-overlay-z-index-reset div.--savior-overlay-z-index-reset ~ div {
+  position: relative;
+}
+.watching-movie #video-player.--savior-overlay-z-index-top {
+  z-index: 2147483644 !important;
+}
+div[class^="tiktok"].--savior-overlay-z-index-reset {
+  z-index: 2147483644 !important;
+}
+.--savior-lightoff-fix section:not(:has([class*="--savior-overlay-"])),
+.--savior-lightoff-fix section.section_video ~ section {
+  z-index: -1;
+  position: relative;
+}
+.--savior-lightoff-fix header,
+.--savior-lightoff-fix footer,
+.--savior-lightoff-fix .top-header,
+.--savior-lightoff-fix .swiper-container,
+.--savior-lightoff-fix #to_top,
+.--savior-lightoff-fix #button-adblock {
+  z-index: -1 !important;
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style></head>
+<body data-lod-band="tactical">
+  <div id="cesiumContainer"><div class="cesium-viewer"><div class="cesium-viewer-cesiumWidgetContainer"><div class="cesium-widget"><canvas style="image-rendering: pixelated;" width="1440" height="724"></canvas><div class="cesium-credit-lightbox-overlay"><div class="cesium-credit-lightbox" id="cesium-credit-lightbox"><div class="cesium-credit-lightbox-title">Data provided by:</div><a class="cesium-credit-lightbox-close" role="button" tabindex="0" aria-label="Close data attribution">×</a><ul><li><div class="cesium-credit-wrapper" style="display: inline;">Flights: OpenSky Network — Schäfer et al., “Bringing Up OpenSky”, IPSN 2014 · <a href="https://opensky-network.org/" rel="noopener" target="_blank">opensky-network.org</a> (non-commercial)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Military flights, aircraft traces, bounded regional flight fallback &amp; GNSS navigation integrity: <a href="https://adsb.lol/" rel="noopener" target="_blank">adsb.lol</a> (ODbL 1.0)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Aircraft type, registration &amp; flight routes: <a href="https://www.adsbdb.com/" rel="noopener" target="_blank">adsbdb</a> · aircraft data from PlaneBase · ICAO-to-N-number conversion by Guillaume Michel · route data is the work of David Taylor, Edinburgh, and Jim Mason, Glasgow, and may not be copied, published, or incorporated into other databases without the explicit permission of David J Taylor, Edinburgh</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Live vessels (AIS): <a href="https://aisstream.io/" rel="noopener" target="_blank">AISStream.io</a></div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Satellites (TLEs): CelesTrak (<a href="https://celestrak.org/" rel="noopener" target="_blank">celestrak.org</a>), Dr. T.S. Kelso</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Space mission launch, payload &amp; recovery metadata: <a href="https://ll.thespacedevs.com/docs/" rel="noopener" target="_blank">Launch Library 2 — The Space Devs</a> (API documentation and rate limits)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Earthquakes: Data courtesy of the U.S. Geological Survey</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Recent imagery: We acknowledge the use of imagery provided by services from NASA's Global Imagery Browse Services (GIBS), part of NASA's Earth Science Data and Information System (ESDIS). <a href="https://gibs.earthdata.nasa.gov/" rel="noopener" target="_blank">gibs.earthdata.nasa.gov</a> · <a href="https://lpdaac.usgs.gov/products/hlss30v002/" rel="noopener" target="_blank">HLS product page</a></div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Wildfire perimeters: <a href="https://data-nifc.opendata.arcgis.com/" rel="noopener" target="_blank">National Interagency Fire Center (WFIGS)</a> · Incident information: <a href="https://inciweb.wildfire.gov/" rel="noopener" target="_blank">InciWeb</a></div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Map and place data <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">© OpenStreetMap contributors</a> (<a href="https://opendatacommons.org/licenses/odbl/1-0/" rel="noopener" target="_blank">ODbL</a>)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Vector tiles: <a href="https://openfreemap.org/" rel="noopener" target="_blank">OpenFreeMap</a> © <a href="https://openmaptiles.org/" rel="noopener" target="_blank">OpenMapTiles</a></div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Air quality (AQHI): Environment and Climate Change Canada — MSC GeoMet (<a href="https://eccc-msc.github.io/open-data/" rel="noopener" target="_blank">eccc-msc.github.io/open-data</a>) · <a href="https://eccc-msc.github.io/open-data/licence/readme_en/" rel="noopener" target="_blank">ECCC Data Servers End-use Licence</a></div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Military area names: <a href="https://overturemaps.org/" rel="noopener" target="_blank">Overture Maps Foundation</a> (ODbL)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Keyless place search: <a href="https://photon.komoot.io/" rel="noopener" target="_blank">Photon</a> (komoot)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Cockpit current conditions: <a href="https://open-meteo.com/en/licence" rel="noopener" target="_blank">Weather data by Open-Meteo.com</a> (CC BY 4.0)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Cockpit regional headlines: <a href="https://policies.google.com/terms" rel="noopener" target="_blank">Google News RSS</a> (location-matched article links; publisher terms apply)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Cockpit regional headlines: <a href="https://www.gdeltproject.org/about.html" rel="noopener" target="_blank">GDELT Project</a> (location-matched article links; publisher terms apply)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames: City of Austin, TX — <a href="https://data.austintexas.gov/" rel="noopener" target="_blank">data.austintexas.gov</a></div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames (Texas): <a href="https://its.txdot.gov/" rel="noopener" target="_blank">Texas Department of Transportation</a> (courtesy)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV live video (Delaware): <a href="https://deldot.gov/map/" rel="noopener" target="_blank">DelDOT — Delaware Department of Transportation</a></div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames (California): Caltrans — <a href="https://cwwp2.dot.ca.gov/" rel="noopener" target="_blank">cwwp2.dot.ca.gov</a></div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames (London): <a href="https://tfl.gov.uk/info-for/open-data-users/" rel="noopener" target="_blank">Powered by TfL Open Data</a>. Contains OS data © Crown copyright and database rights.</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames (Ontario): <a href="https://511on.ca/" rel="noopener" target="_blank">Ontario 511</a> (<a href="https://www.ontario.ca/page/open-government-licence-ontario" rel="noopener" target="_blank">Open Government Licence - Ontario</a>)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames (Finland): Fintraffic / <a href="https://www.digitraffic.fi/en/" rel="noopener" target="_blank">digitraffic.fi</a>, license CC BY 4.0</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Road-camera stills (Lithuania, when enabled): <a href="https://eismoinfo.lt/" rel="noopener" target="_blank">Via Lietuva / Eismoinfo</a>; periodically updated images</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Traffic cameras (Calgary): contains information licensed under the <a href="https://data.calgary.ca/stories/s/Open-Calgary-Terms-of-Use/u45n-7awa" rel="noopener" target="_blank">Open Government Licence – City of Calgary</a></div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames (Catalonia): <a href="https://transit.gencat.cat/" rel="noopener" target="_blank">Servei Català de Trànsit</a> (Llicència oberta d’ús d’informació - Catalunya); some cameras are supplied by partners (Ajuntament de Barcelona, Ajuntament de Terrassa), each named in the CCTV panel</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames (King County, WA): King County Road Services — <a href="https://kingcounty.gov/en/dept/local-services/roads" rel="noopener" target="_blank">kingcounty.gov</a>, per the <a href="https://kingcounty.gov/en/dept/kcit/data-information-services/gis-center/about/terms-conditions-copyrights" rel="noopener" target="_blank">KCGIS Center terms</a>. Partner-city cameras hosted on the county image handler (e.g. Newcastle) name their owner in the CCTV panel.</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Road cameras (Norway): contains data under the <a href="https://data.norge.no/nlod/en/2.0" rel="noopener" target="_blank">Norwegian licence for Open Government data (NLOD)</a> distributed by Statens vegvesen</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames (New York City, when enabled): <a href="https://webcams.nyctmc.org/" rel="noopener" target="_blank">NYC DOT Traffic Management Center</a>. This application may contain and/or utilize information which was originally compiled by the New York City Department of Transportation (NYC DOT) for governmental purposes; the information may subsequently been modified by entity/entities other than NYC DOT. NYC DOT and the City of New York make no representation as to the accuracy or usefulness of the information provided by this application or the information's suitability for any purpose and disclaim any liability for omissions or errors that may be contained therein. The public is advised to observe posted signage for compliance with applicable laws and regulations.</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Traffic cameras (Toronto): contains information licensed under the <a href="https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-licence/" rel="noopener" target="_blank">Open Government Licence – Toronto</a></div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Bikeshare availability: GBFS operator feeds (e.g. Austin BCycle; Bike Share Toronto, operated by the Toronto Parking Authority; Bike Itaú and Tembici Bogotá, operated by Tembici; Bicing, Barcelona City Council (B:SM); AMBici, Àrea Metropolitana de Barcelona, operated by nextbike)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">City bikes (Norway): contains data under the <a href="https://data.norge.no/nlod/en/2.0" rel="noopener" target="_blank">Norwegian licence for Open Government data (NLOD)</a> made available by Oslo Bysykkel, Bergen Bysykkel and Trondheim Bysykkel</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">City bikes (Stavanger, Skien/Porsgrunn): contains data under the <a href="https://data.norge.no/nlod/en/2.0" rel="noopener" target="_blank">Norwegian licence for Open Government data (NLOD)</a> made available by Entur (Kolumbus Bysykkel, Farte Bysykkel)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">City bikes (Lillestrøm): Bysykkel Lillestrøm, JCDecaux — <a href="https://developer.jcdecaux.com/files/Open-Licence-fr.pdf" rel="noopener" target="_blank">Licence Ouverte</a></div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Routing (voice routes and Directions): OSRM on the FOSSGIS servers — <a href="https://routing.openstreetmap.de/about.html" rel="noopener" target="_blank">routing.openstreetmap.de</a> · <a href="https://www.openstreetmap.org/fixthemap" rel="noopener" target="_blank">fix the map</a></div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Transit vehicles: operator GTFS-Realtime feeds (each operator is credited below when its vehicles are shown)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Internet-radio station directory: <a href="https://www.radio-browser.info/" rel="noopener" target="_blank">Radio Browser</a> (public domain; audio delivered directly by each broadcaster)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Terrain (keyless globe stacks): <a href="https://terrain.reearth.land/" rel="noopener" target="_blank">Re:Earth Terrain</a> / Mapterhorn (CC BY 4.0) / EGM2008 (NGA)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Observed weather: <a href="https://nowcoast.noaa.gov/" rel="noopener" target="_blank">NOAA nowCOAST</a> · NWS/OAR MRMS radar; NESDIS GOES and global satellite partners. <a href="https://oceanservice.noaa.gov/disclaimer.html" rel="noopener" target="_blank">Source disclaimer</a>.</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Cyclone advisories: <a href="https://www.nhc.noaa.gov/" rel="noopener" target="_blank">NOAA/NWS NHC / CPHC</a> · Atlantic and eastern/central North Pacific. Forecast center uncertainty, not storm size.</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Lightning density: NOAA/NWS nowCOAST · derived from Vaisala NLDN/GLD360. <a href="https://ocean.weather.gov/lightning/lightning_pdd.php" rel="noopener" target="_blank">Public derived density product</a>, not raw detections.</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Wind: resampled NOAA Global Forecast System (GFS) 10 m wind via <a href="https://registry.opendata.aws/noaa-gfs-bdp-pds/" rel="noopener" target="_blank">NOAA Open Data on AWS</a> (U.S. public domain; forecast, not observations)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">This service is based on data and products of the European Centre for Medium-Range Weather Forecasts (ECMWF). <a href="https://www.ecmwf.int/en/forecasts/datasets/open-data" rel="noopener" target="_blank">ECMWF Open Data</a> · <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank">CC BY 4.0</a>. Modified: resampled 10 m IFS forecast vectors and animated display. ECMWF does not accept any liability whatsoever for any error or omission in the data, their availability, or for any loss or damage arising from their use.</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Dams: Open Infrastructure Map</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Active fires: NASA FIRMS — we acknowledge the use of data and/or imagery from NASA’s Fire Information for Resource Management System (<a href="https://earthdata.nasa.gov/firms" rel="noopener" target="_blank">earthdata.nasa.gov/firms</a>), part of NASA’s Earth Observing System Data and Information System (EOSDIS)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames (British Columbia): <a href="https://www.drivebc.ca/" rel="noopener" target="_blank">DriveBC</a>. Contains information licensed under the <a href="https://www2.gov.bc.ca/gov/content/data/open-data/open-government-licence-bc" rel="noopener" target="_blank">Open Government Licence – British Columbia</a>. Some cameras are supplied by partners (TransLink, the City of Vancouver, the City of Surrey, Parks Canada and others); each names its provider in the CCTV panel.</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames (Washington State): <a href="https://wsdot.wa.gov/" rel="noopener" target="_blank">Washington State Department of Transportation</a> (<a href="https://wsdot.com/travel/real-time/cameras" rel="noopener" target="_blank">Travel Center</a>), used per the <a href="https://wsdot.wa.gov/about/policies/travel-information-disclaimer" rel="noopener" target="_blank">WSDOT travel information disclaimer</a> (low-volume public feed; catalog cached, frames proxied on demand)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames (Tallinn): City of Tallinn — <a href="https://ristmikud.tallinn.ee/" rel="noopener" target="_blank">ristmikud.tallinn.ee</a> (courtesy)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames (Estonia road weather): Transpordiamet / Tarktee — <a href="https://tarktee.transpordiamet.ee/" rel="noopener" target="_blank">tarktee.transpordiamet.ee</a> (courtesy)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Webcam (Warendorf): <a href="https://www.warendorf.de/" rel="noopener" target="_blank">Stadt Warendorf</a> (courtesy)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">CCTV cameras &amp; frames (New South Wales): <a href="https://www.livetraffic.com/" rel="noopener" target="_blank">Live Traffic NSW</a> — Transport for NSW (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank">CC BY 4.0</a>)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Submarine cables: © TeleGeography — <a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">submarinecablemap.com</a> (CC BY-NC-SA 3.0 — NonCommercial)</div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Source: Esri, Vantor, Earthstar Geographics, and the GIS User Community</div></li><li><div class="cesium-credit-wrapper" style="display: inline;"><a href="https://terrain.reearth.land/" target="_blank">Re:Earth Terrain</a>, <a href="https://mapterhorn.com/" target="_blank">Mapterhorn</a>, <a href="https://earth-info.nga.mil/" target="_blank">EGM2008 (NGA)</a>, <a href="https://protomaps.com/" target="_blank">Protomaps</a>, <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a></div></li><li><div class="cesium-credit-wrapper" style="display: inline;">Powered by Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community</div></li></ul></div></div></div></div><div class="cesium-viewer-bottom" style="left: 5px; bottom: 3px; right: 0px;"></div><div class="cesium-viewer-toolbar"></div></div><div id="celestial-ring-overlay" class="celestial-ring-overlay disabled" aria-hidden="true"><div class="celestial-ring-outline" style="display: none;"></div><canvas class="celestial-ring-canvas celestial-sun-canvas"></canvas><canvas class="celestial-ring-canvas celestial-moon-canvas"></canvas><span class="celestial-marker celestial-sun material-symbols-outlined">light_mode</span><span class="celestial-marker celestial-moon material-symbols-outlined">dark_mode</span></div><canvas id="world-overlay-detection-surface" aria-hidden="true" style="mix-blend-mode: screen; filter: contrast(1.05) saturate(1.05) drop-shadow(rgba(0, 244, 255, 0.4) 0px 0px 3px); display: block; opacity: 1; width: 1440px; height: 724px;" width="2880" height="1448"></canvas><canvas id="scope-mask" aria-hidden="true" width="2880" height="1448"></canvas></div>
+  <div id="world-overlay-root" aria-hidden="true">
+    <canvas id="world-overlay-canvas" aria-hidden="true" width="2880" height="1448" style="width: 1440px; height: 724px;"></canvas>
+  </div>
+  <div id="world-overlay-actions" class="world-overlay-accessibility" role="region" aria-label="Visible map targets" data-i18n-aria-label="">
+    <div id="world-overlay-action-list"></div>
+    <div id="world-overlay-status" role="status" aria-live="polite" aria-atomic="true"></div>
+  </div>
+
+  <!-- Title Bar (Top-Left) -->
+  <div id="title-bar" class="nm-title-bar" translate="no">
+    <div class="title-glow"></div>
+    <div class="title-brand-block">
+      <h1>
+        <span class="title-logo nm-brand-logo" aria-hidden="true">
+          <img src="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/nm-logo.png" alt="N&amp;M Studio">
+          <span class="logo-reticle"></span>
+        </span>
+        <span class="brand-text-wrap">
+          <span class="brand-studio-kicker" data-nm-i18n="studio_kicker">N&amp;M STUDIO // CHỈ HUY TÁC CHIẾN</span>
+          <span class="brand-main-title">GOD'S EYE <span class="title-accent">VIEW</span></span>
+        </span>
+      </h1>
+      <p class="subtitle">
+        <span class="sub-status-dot"></span>
+        <span class="sub-text" data-i18n="" data-nm-i18n="subtitle">DỮ LIỆU TÌNH BÁO KHÔNG GIAN THỜI GIAN THỰC · KHÔNG ĐỂ SÓT VÙNG ĐẤT NÀO</span>
+      </p>
+
+      <!-- Tactical Operator Uplink (Phone / Zalo) -->
+      <a href="https://zalo.me/0985578385" target="_blank" rel="noopener noreferrer" class="tactical-operator-badge" title="Connect Commander via Zalo / Phone: 0985 578 385">
+        <span class="tac-badge-status-pulse"></span>
+        <div class="tac-badge-content">
+          <div class="tac-badge-top">
+            <span class="tac-badge-code" data-nm-i18n="secure_comm_link">ĐƯỜNG TRUYỀN BẢO MẬT</span>
+            <span class="tac-badge-status">ONLINE</span>
+          </div>
+          <div class="tac-badge-phone">
+            <span class="tac-phone-icon">☎</span>
+            <span class="tac-phone-num">0985 578 385</span>
+            <span class="tac-phone-tag">ZALO</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  <div class="frame-rate-readout" hidden="" title="Rendered globe frames per second · toggle with `">FPS —</div></div>
+
+  <!-- Top-Right Tactical Bar (Coffee, Language, Help, Style) -->
+  <div id="top-right-actions" class="nm-top-right-bar" translate="no">
+    <!-- Buy Me A Coffee Tab Button -->
+    <button type="button" id="nm-coffee-btn" class="nm-coffee-tab-btn" title="Mời N&amp;M Tách Cà Phê · Đồng hành cùng dự án">
+      <span class="coffee-cup-icon">☕</span>
+      <div class="coffee-text-group">
+        <span class="coffee-kicker" data-nm-i18n="coffee_btn_sub">ĐỒNG HÀNH CÙNG N&amp;M</span>
+        <span class="coffee-main-text" data-nm-i18n="coffee_btn">BUY ME A COFFEE</span>
+      </div>
+    </button>
+
+    <!-- V3 Operational Mode Switcher [ GHOST | TACTICAL | FORENSIC ] -->
+    <div class="v3-mode-switcher" id="v3-mode-switcher" role="radiogroup" aria-label="Operational Mode">
+      <button type="button" class="v3-mode-btn" data-mode="ghost" title="Ghost Mode (G): Cinematic observation">GHOST</button>
+      <button type="button" class="v3-mode-btn active" data-mode="tactical" title="Tactical Mode (T): Everyday workspace">TACTICAL</button>
+      <button type="button" class="v3-mode-btn" data-mode="forensic" title="Forensic Mode (Shift+F): Dense analysis">FORENSIC</button>
+    </div>
+
+    <!-- V3 Command Palette Trigger -->
+    <button type="button" id="v3-palette-btn" class="v3-palette-trigger" title="Command Palette (Ctrl+K or /)">
+      <span class="palette-kbd">⌘K</span>
+    </button>
+
+    <!-- Bilingual Slice Toggle EN/VN -->
+    <div class="nm-slice-toggle" id="nm-lang-toggle" title="Switch Language / Đổi ngôn ngữ">
+      <button type="button" class="nm-slice-btn active" data-lang="vi">VN</button>
+      <button type="button" class="nm-slice-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Help Guide (?) Button -->
+    <button type="button" id="nm-help-btn" class="nm-help-hud-btn" data-nm-i18n-title="help_tooltip" title="Hướng dẫn tác chiến &amp; Giải thích tính năng">
+      <span class="help-question-mark">?</span>
+      <span class="help-btn-label" data-nm-i18n="help_btn">HƯỚNG DẪN</span>
+    </button>
+
+    <!-- Style indicator -->
+    <div id="style-indicator">
+      <span class="indicator-label" data-i18n="" data-nm-i18n="active_style">KIỂU HIỂN THỊ</span>
+      <span class="indicator-value" id="active-style-name">NORMAL</span>
+    </div>
+  </div>
+
+  <!-- Top-center camera and share actions -->
+  <nav id="top-center-actions" aria-label="Globe actions" data-i18n-aria-label="">
+    <button id="clear-selected-layers" type="button" aria-label="Clear selected data layers" title="Turn off all selected data layers" data-i18n-aria-label="" data-i18n-title="">
+      <span class="material-symbols-outlined" aria-hidden="true">layers_clear</span>
+    </button>
+    <button id="share-btn" type="button" aria-label="Copy share link" title="Copy share link" data-i18n-aria-label="" data-i18n-title="">
+      <span class="share-icon" aria-hidden="true">🔗</span>
+    </button>
+    <button id="tilt-map-view" type="button" aria-label="Return map to straight-down view" aria-pressed="true" title="Toggle straight-down and tilted map views" data-i18n-aria-label="" data-i18n-title="">
+      <span class="material-symbols-outlined" aria-hidden="true">view_in_ar</span>
+    </button>
+    <button id="north-up-view" type="button" aria-label="Reset map to north up. Current heading 15 degrees" title="Reset map bearing to north" data-i18n-aria-label="" data-i18n-title="" data-north-up="false" style="--camera-heading: 15deg;">
+      <span class="camera-compass-n" aria-hidden="true">N</span>
+      <span class="camera-compass-needle material-symbols-outlined" aria-hidden="true">navigation</span>
+    </button>
+    <button id="reset-globe-view" type="button" aria-label="Reset to full globe view" title="Reset camera and return to full globe view" data-i18n-aria-label="" data-i18n-title="">
+      <span class="material-symbols-outlined" aria-hidden="true">public</span>
+    </button>
+  </nav>
+  <div id="global-loading-status" role="status" aria-live="polite" aria-atomic="true" hidden="">
+    <span id="global-loading-label" data-i18n="">LOADING LIVE DATA</span>
+    <span id="global-loading-detail"></span>
+  </div>
+  <div id="traffic-sync-chip" aria-live="polite">
+    <span id="traffic-sync-label" data-i18n="">syncing road network</span>
+    <span id="traffic-sync-progress"></span>
+  </div>
+  <div id="cctv-sync-chip" aria-live="polite">
+    <span id="cctv-sync-label" data-i18n="">loading frames</span>
+    <span id="cctv-sync-progress">0/0</span>
+  </div>
+  <!-- V3 Bottom Telemetry Strip & Information LOD -->
+  <footer id="v3-telemetry-strip" class="v3-telemetry-strip" translate="no" aria-label="Spatial Telemetry Strip">
+    <div class="v3-telemetry-group">
+      <span class="v3-tel-item"><strong class="lbl">LAT:</strong> <span id="v3-tel-lat">30.2672°N</span></span>
+      <span class="v3-tel-item"><strong class="lbl">LON:</strong> <span id="v3-tel-lon">97.7431°W</span></span>
+      <span class="v3-tel-item"><strong class="lbl">ALT:</strong> <span id="v3-tel-alt">600 m</span></span>
+      <span class="v3-tel-item"><strong class="lbl">HDG:</strong> <span id="v3-tel-hdg">15°</span></span>
+      <span class="v3-tel-item"><strong class="lbl">PITCH:</strong> <span id="v3-tel-pitch">-30°</span></span>
+    </div>
+    <div id="v3-lod-status" class="v3-lod-status" aria-live="polite">
+      <span class="v3-lod-mode">AUTO LOD</span>
+      <span class="v3-lod-band">[TACTICAL]</span>
+      
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Safe frame guides for recording composition -->
+  <div id="safe-frame-overlay">
+    <div id="safe-frame-box"></div>
+  </div>
+
+  <!-- Aircraft first-person view. It can be entered from the visible view switcher. -->
+  <section id="cockpit-hud" aria-label="Aircraft cockpit view" hidden="" data-i18n-aria-label="">
+    <!-- One optical coordinate system: every targeting mark shares this center.
+         Decorative only; telemetry and interactive panels remain separate. -->
+    <svg class="cockpit-frame-lines" viewBox="0 0 1200 720" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="currentColor">
+        <path d="M42 106H234L266 126H334 M866 126H934L966 106H1158 M42 114H226L258 136H318 M882 136H942L974 114H1158"></path>
+        <path d="M42 616H226L254 598H320 M880 598H946L974 616H1158 M42 624H238L266 606H330 M870 606H934L962 624H1158"></path>
+        <path d="M322 650H878L858 622H728L708 634H492L472 622H342Z M348 659H852"></path>
+        <path d="M72 160H144L158 174V186 M1056 160H1128L1142 174V186 M72 562H144L158 548V536 M1056 562H1128L1142 548V536"></path>
+      </g>
+      <path class="cockpit-frame-warning" d="M338 645H476L490 654H710L724 645H862" fill="none"></path>
+      <path class="cockpit-frame-meter" d="M372 642H418 M782 642H828"></path>
+    </svg>
+    <div class="cockpit-scan-array" aria-hidden="true">
+      <svg class="cockpit-target-geometry" viewBox="0 0 600 600" fill="none" focusable="false">
+        <g class="cockpit-target-hairline">
+          <circle cx="300" cy="300" r="276"></circle>
+          <circle class="cockpit-target-drift" cx="300" cy="300" r="250" stroke-dasharray="1 13"></circle>
+          <circle cx="300" cy="300" r="164"></circle>
+          <path d="M190 237V363 M410 237V363 M99 227H139 M461 227H501 M99 373H139 M461 373H501"></path>
+          <path d="M86 113H118L134 129 M514 113H482L466 129 M86 487H118L134 471 M514 487H482L466 471"></path>
+        </g>
+        <g class="cockpit-target-side-arcs">
+          <path d="M70 167A266 266 0 0 0 70 433 M530 167A266 266 0 0 1 530 433"></path>
+        </g>
+        <g class="cockpit-target-ticks">
+          <path d="M166 125A220 220 0 0 1 434 125 M166 475A220 220 0 0 0 434 475"></path>
+        </g>
+        <g class="cockpit-target-dots">
+          <path d="M180 130A208 208 0 0 1 420 130 M180 470A208 208 0 0 0 420 470"></path>
+        </g>
+        <g class="cockpit-target-warning-dots">
+          <path d="M172 112A227 227 0 0 1 428 112 M172 488A227 227 0 0 0 428 488"></path>
+        </g>
+        <g class="cockpit-target-core">
+          <!-- One outer ring and a spaced rotor leave the aiming center open. -->
+          <circle class="cockpit-target-orbit" cx="300" cy="300" r="132" stroke-dasharray="186 21"></circle>
+          <circle class="cockpit-target-rotor" cx="300" cy="300" r="104" stroke-dasharray="128 35" transform="rotate(9 300 300)"></circle>
+          <path class="cockpit-target-spokes" d="M206 206L250 250 M350 350L394 394 M394 206L350 250 M250 350L206 394"></path>
+          <path d="M168 291H180V309H168 M432 291H420V309H432"></path>
+          <circle cx="206" cy="206" r="3"></circle><circle cx="394" cy="206" r="3"></circle>
+          <circle cx="206" cy="394" r="3"></circle><circle cx="394" cy="394" r="3"></circle>
+        </g>
+      </svg>
+    </div>
+    <div class="cockpit-visor-shell" aria-hidden="true">
+      <div class="cockpit-roll-arc">
+        <span style="--slot:-3;--depth:3">−30</span>
+        <span style="--slot:-2;--depth:2">−20</span>
+        <span style="--slot:-1;--depth:1">−10</span>
+        <span class="active" style="--slot:0;--depth:0">0</span>
+        <span style="--slot:1;--depth:1">+10</span>
+        <span style="--slot:2;--depth:2">+20</span>
+        <span style="--slot:3;--depth:3">+30</span>
+      </div>
+      <div class="cockpit-pitch-rail cockpit-pitch-rail-left">
+        <span>+20</span><span>+10</span><span class="active">00</span><span>−10</span><span>−20</span>
+      </div>
+      <div class="cockpit-pitch-rail cockpit-pitch-rail-right">
+        <span>+20</span><span>+10</span><span class="active">00</span><span>−10</span><span>−20</span>
+      </div>
+      <div class="cockpit-horizon-guide">
+        <span></span><small data-i18n="">LEVEL</small><span></span>
+      </div>
+      <div id="cockpit-route-direction" class="cockpit-route-direction" hidden="" aria-label="Estimated destination direction" data-i18n-aria-label="">
+        <svg class="cockpit-route-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 2 4.58 19.93c-.34.83.51 1.63 1.31 1.27L12 18.47l6.11 2.73c.8.36 1.65-.44 1.31-1.27L12 2Z"></path>
+        </svg>
+        <small id="cockpit-route-direction-label" data-i18n="">DEST ---°</small>
+      </div>
+      <div class="cockpit-visor-status cockpit-visor-status-left" data-i18n="">OPTICAL PLANE · 01</div>
+      <div class="cockpit-visor-status cockpit-visor-status-right" data-i18n="">VISOR LOCK · ACTIVE</div>
+    </div>
+    <div id="cockpit-speed-rim" class="cockpit-altitude-rim cockpit-speed-rim">
+      <span class="cockpit-altitude-rim-label" data-i18n="">GROUND SPEED · KTS</span>
+      <div class="cockpit-altitude-rim-rail"></div>
+      <div class="cockpit-altitude-rim-scale">
+        <span data-speed-rim-tick=""><b></b><i></i></span>
+        <span data-speed-rim-tick=""><b></b><i></i></span>
+        <span data-speed-rim-tick=""><b></b><i></i></span>
+        <span data-speed-rim-tick=""><b></b><i></i></span>
+        <span data-speed-rim-tick=""><b></b><i></i></span>
+        <span data-speed-rim-tick=""><b></b><i></i></span>
+        <span data-speed-rim-tick=""><b></b><i></i></span>
+        <span data-speed-rim-tick=""><b></b><i></i></span>
+        <span data-speed-rim-tick=""><b></b><i></i></span>
+      </div>
+      <div class="cockpit-altitude-rim-pointer">
+        <span class="material-symbols-outlined">arrow_right</span>
+        <strong id="cockpit-speed-rim-value">---</strong>
+      </div>
+    </div>
+    <div id="cockpit-altitude-rim" class="cockpit-altitude-rim">
+      <span class="cockpit-altitude-rim-label" data-i18n="">ALTITUDE · FT</span>
+      <div class="cockpit-altitude-rim-rail"></div>
+      <div class="cockpit-altitude-rim-scale">
+        <span data-altitude-rim-tick=""><b></b><i></i></span>
+        <span data-altitude-rim-tick=""><b></b><i></i></span>
+        <span data-altitude-rim-tick=""><b></b><i></i></span>
+        <span data-altitude-rim-tick=""><b></b><i></i></span>
+        <span data-altitude-rim-tick=""><b></b><i></i></span>
+        <span data-altitude-rim-tick=""><b></b><i></i></span>
+        <span data-altitude-rim-tick=""><b></b><i></i></span>
+        <span data-altitude-rim-tick=""><b></b><i></i></span>
+        <span data-altitude-rim-tick=""><b></b><i></i></span>
+      </div>
+      <div class="cockpit-altitude-rim-pointer">
+        <strong id="cockpit-altitude-rim-value">-----</strong>
+        <span class="material-symbols-outlined">arrow_left</span>
+      </div>
+    </div>
+    <div class="cockpit-topline">
+      <div>
+        <span class="cockpit-kicker" data-i18n="">FIRST PERSON</span>
+        <strong id="cockpit-callsign" data-i18n="">AIRCRAFT</strong>
+        <span id="cockpit-aircraft-meta" class="cockpit-aircraft-meta" data-i18n="">LIVE TRACK · COURSE ALIGNED</span>
+      </div>
+      <div class="cockpit-vision-controls" role="group" aria-label="Cockpit vision style" data-i18n-aria-label="">
+        <button id="cockpit-vision-previous" class="cockpit-vision-nav" type="button" aria-label="Previous cockpit vision style" title="Previous vision style" data-i18n-aria-label="" data-i18n-title="">
+          <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
+          <small data-i18n="">PREV</small>
+        </button>
+        <button id="cockpit-vision-current" class="cockpit-vision-current" type="button" data-cockpit-vision="optical" aria-label="Current cockpit vision style: NORMAL. Activate for next style." title="Current style: NORMAL — click for next" data-i18n-aria-label="" data-i18n-title="">
+          <small data-i18n="">CURRENT</small>
+          <strong id="cockpit-vision-current-label" aria-live="polite" data-i18n="">NORMAL</strong>
+        </button>
+        <button id="cockpit-vision-next" class="cockpit-vision-nav" type="button" aria-label="Next cockpit vision style" title="Next vision style" data-i18n-aria-label="" data-i18n-title="">
+          <small data-i18n="">NEXT</small>
+          <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+        </button>
+      </div>
+    </div>
+    <div class="cockpit-reticle material-symbols-outlined" aria-hidden="true">my_location</div>
+    <div class="cockpit-compass" aria-label="Current aircraft heading" data-i18n-aria-label="">
+      <div class="cockpit-instrument-row">
+        <div class="cockpit-readout cockpit-speed">
+          <span class="cockpit-readout-label" data-i18n="">GROUND SPEED</span>
+          <strong id="cockpit-speed-value">---</strong>
+          <span class="cockpit-readout-unit" data-i18n="">KTS</span>
+        </div>
+        <div class="cockpit-heading-value"><span id="cockpit-heading-value">---</span><small>°</small></div>
+        <div class="cockpit-readout cockpit-altitude">
+          <span class="cockpit-readout-label" data-i18n="">ALTITUDE</span>
+          <strong id="cockpit-altitude-value">-----</strong>
+          <span class="cockpit-readout-unit" data-i18n="">FT</span>
+        </div>
+      </div>
+      <span class="cockpit-heading-caret material-symbols-outlined" aria-hidden="true">arrow_drop_down</span>
+      <div class="cockpit-compass-tape" id="cockpit-compass-tape" aria-hidden="true"></div>
+    </div>
+    <div class="cockpit-position-readout">
+      <span id="cockpit-clock">--:--:--Z</span>
+      <span id="cockpit-position">--° · --°</span>
+    </div>
+    <aside id="cockpit-context" class="cockpit-context-window" aria-label="Contact cockpit summary" hidden="" data-i18n-aria-label="">
+      <header class="cockpit-context-header">
+        <div>
+          <span data-i18n="" class="cockpit-context-kicker">CONTACT</span>
+          <strong id="cockpit-context-subject" data-i18n="">CONTACTS · 250 KM</strong>
+        </div>
+        <nav class="cockpit-context-actions" aria-label="Contact navigation" data-i18n-aria-label="">
+          <button id="cockpit-context-previous" type="button" aria-label="Previous — prior visited contact in the 250 km window" title="Previous — prior visited contact in the 250 km window" data-i18n-aria-label="" data-i18n-title="">
+            <span class="material-symbols-outlined" aria-hidden="true">skip_previous</span>
+          </button>
+          <button id="cockpit-context-next" type="button" aria-label="Next — nearest unvisited contact in the 250 km window" title="Next — nearest unvisited contact in the 250 km window" data-i18n-aria-label="" data-i18n-title="">
+            <span class="material-symbols-outlined" aria-hidden="true">skip_next</span>
+          </button>
+          <button id="cockpit-context-toggle" type="button" aria-label="Collapse Contact panel" aria-expanded="true" title="Collapse contact panel" data-i18n-aria-label="" data-i18n-title="">
+            <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
+          </button>
+        </nav>
+        <span class="cockpit-context-qualifier" data-i18n="">CONTEXT ONLY</span>
+      </header>
+      <div class="cockpit-context-cohorts" role="list" aria-label="Nearby cohort counts" data-i18n-aria-label="">
+        <div role="listitem" data-context-cohort="flights"><span data-i18n="">FLT</span><strong>—</strong><small translate="no">OpenSky</small></div>
+        <div role="listitem" data-context-cohort="military"><span data-i18n="">MIL</span><strong>—</strong><small translate="no">adsb.lol</small></div>
+        <div role="listitem" data-context-cohort="ais-live-vessels"><span translate="no">AIS</span><strong>—</strong><small translate="no">AISStream</small></div>
+        <div role="listitem" data-context-cohort="military-installations"><span data-i18n="">SITE</span><strong>—</strong><small translate="no">OpenStreetMap</small></div>
+      </div>
+      <div class="cockpit-context-nearest">
+        <span id="cockpit-context-direction" class="material-symbols-outlined" aria-hidden="true">navigation</span>
+        <div>
+          <small data-i18n="">NEAREST OBSERVED / MAPPED</small>
+          <strong id="cockpit-context-nearest-label" data-i18n="">NO AVAILABLE EXAMPLE</strong>
+        </div>
+        <span id="cockpit-context-bearing">—</span>
+        <span id="cockpit-context-distance">—</span>
+      </div>
+      <footer class="cockpit-context-footer">
+        <span id="cockpit-context-uncertainty" data-i18n="">AVAILABLE INPUTS ONLY · NOT AN ALL-CLEAR</span>
+        <button id="cockpit-weather-toggle" class="cockpit-context-weather" type="button" aria-label="Enable cockpit weather effects" aria-pressed="false" title="Enable cockpit weather effects" data-i18n-aria-label="" data-i18n-title="">
+          <span data-i18n="">WX</span>
+          <strong data-i18n="" id="cockpit-weather-state">OFF</strong>
+        </button>
+        <time id="cockpit-context-updated">--:--:--Z</time>
+      </footer>
+    </aside>
+    <aside id="cockpit-signal-stream" class="cockpit-signal-window" aria-label="Cockpit briefing carousel" hidden="" data-i18n-aria-label="">
+      <section id="cockpit-route" class="cockpit-route-card" aria-label="Estimated flight plan" hidden="" data-i18n-aria-label="">
+        <div class="cockpit-route-heading">
+          <span class="cockpit-route-kicker" data-i18n="">ESTIMATED FLIGHT PLAN</span>
+          <small id="cockpit-route-status" data-i18n="">ROUTE DATA UNAVAILABLE</small>
+        </div>
+        <div class="cockpit-route-endpoints">
+          <div class="cockpit-route-airport">
+            <span data-i18n="">FROM</span>
+            <strong id="cockpit-route-from" data-i18n="">UNKNOWN</strong>
+          </div>
+          <span class="cockpit-route-arrow material-symbols-outlined" aria-hidden="true">east</span>
+          <div class="cockpit-route-airport">
+            <span data-i18n="">TO</span>
+            <strong id="cockpit-route-to" data-i18n="">UNKNOWN</strong>
+          </div>
+        </div>
+      </section>
+      <header class="cockpit-signal-header">
+        <div class="cockpit-brief-heading">
+          <span id="cockpit-brief-kicker" class="cockpit-signal-kicker" data-i18n-runtime=""><i aria-hidden="true"></i> LIVE SIGNALS</span>
+          <strong id="cockpit-brief-subtitle" data-i18n="">OBSERVED / MAPPED PINGS</strong>
+        </div>
+        <nav class="cockpit-brief-actions" aria-label="Cockpit briefing controls" data-i18n-aria-label="">
+          <button id="cockpit-brief-previous" type="button" aria-label="Previous briefing page" title="Previous briefing page" data-i18n-aria-label="" data-i18n-title="">
+            <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
+          </button>
+          <span id="cockpit-brief-position" aria-live="polite">1 / 3</span>
+          <button id="cockpit-brief-next" type="button" aria-label="Next briefing page" title="Next briefing page" data-i18n-aria-label="" data-i18n-title="">
+            <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+          </button>
+          <button id="cockpit-brief-auto" type="button" aria-label="CYCLE OFF" aria-pressed="false" title="Cycle briefing pages automatically every 9 seconds (Signals → News → Local). Pauses while you hover or focus the panel. Live signal data refreshes continuously either way." data-i18n-title="" data-i18n-aria-label="" data-i18n="">CYCLE OFF</button>
+          <button id="cockpit-signal-toggle" type="button" aria-label="Collapse cockpit briefing panel" aria-expanded="true" title="Collapse briefing panel" data-i18n-aria-label="" data-i18n-title="">
+            <span class="material-symbols-outlined" aria-hidden="true">right_panel_close</span>
+          </button>
+        </nav>
+      </header>
+      <div class="cockpit-brief-stage">
+        <section data-cockpit-brief-page="signals" aria-label="Live signals" data-i18n-aria-label="">
+          <ol id="cockpit-signal-list" class="cockpit-signal-list" aria-live="polite"></ol>
+        </section>
+        <section data-cockpit-brief-page="news" aria-label="Latest regional news" hidden="" data-i18n-aria-label="">
+          <div id="cockpit-news-status" class="cockpit-brief-status" data-i18n="">ACQUIRING REGIONAL NEWS</div>
+          <ol id="cockpit-news-list" class="cockpit-news-list" aria-live="polite"></ol>
+        </section>
+        <section data-cockpit-brief-page="local" aria-label="Location-based information" hidden="" data-i18n-aria-label="">
+          <div class="cockpit-local-place">
+            <strong id="cockpit-local-place" data-i18n="">RESOLVING REGION</strong>
+            <small id="cockpit-local-coordinates">--</small>
+          </div>
+          <div class="cockpit-local-grid">
+            <div><span data-i18n="">TEMP</span><strong id="cockpit-local-temperature">—</strong><small translate="no">OPEN-METEO</small></div>
+            <div><span data-i18n="">WIND</span><strong id="cockpit-local-wind">—</strong><small id="cockpit-local-wind-direction">—</small></div>
+            <div><span data-i18n="">SKY</span><strong id="cockpit-local-condition" data-i18n="">UNKNOWN</strong><small id="cockpit-local-cloud">—</small></div>
+            <div><span data-i18n="">PRECIP</span><strong id="cockpit-local-precipitation">—</strong><small data-i18n="">MM</small></div>
+          </div>
+          <a class="cockpit-weather-credit" href="https://open-meteo.com/" target="_blank" rel="noopener" data-i18n="">Weather data by Open-Meteo.com</a>
+        </section>
+      </div>
+      <footer class="cockpit-signal-footer">
+        <span id="cockpit-brief-source" data-i18n="">SOURCE-BACKED EVENTS · NO SYNTHETIC NEWS</span>
+        <nav class="cockpit-brief-tabs" aria-label="Cockpit briefing pages" data-i18n-aria-label="">
+          <button type="button" data-cockpit-brief-index="0" aria-label="Show Live Signals" aria-current="true" data-i18n-aria-label="" data-i18n="">SIG</button>
+          <button type="button" data-cockpit-brief-index="1" aria-label="Show Regional News" data-i18n-aria-label="" data-i18n="">NEWS</button>
+          <button type="button" data-cockpit-brief-index="2" aria-label="Show Local Info" data-i18n-aria-label="" data-i18n="">LOCAL</button>
+        </nav>
+      </footer>
+    </aside>
+    <aside id="cockpit-utility-controls" class="cockpit-utility-controls" aria-label="Cockpit display and Radio controls" data-i18n-aria-label="">
+      <div class="cockpit-utility-control">
+        <div class="cockpit-utility-launcher" data-cockpit-launcher="display">
+          <span data-i18n="">DISPLAY</span>
+          <span class="cockpit-utility-divider" aria-hidden="true"></span>
+          <button id="cockpit-display-toggle-btn" class="cockpit-utility-glyph" type="button" aria-expanded="false" aria-controls="cockpit-display-panel" aria-label="Expand Cockpit display options" title="Expand Cockpit display options" data-i18n-aria-label="" data-i18n-title="">◀</button>
+        </div>
+        <div id="cockpit-display-panel" class="cockpit-utility-popover" role="group" aria-label="Cockpit display options" hidden="" data-i18n-aria-label="">
+          <div class="cockpit-display-slot" data-cockpit-display-slot="hud"></div>
+          <div class="cockpit-display-slot" data-cockpit-display-slot="detection"></div>
+          <div class="cockpit-display-slot" data-cockpit-display-slot="parameters"></div>
+          <div class="cockpit-display-slot" data-cockpit-display-slot="models3d"></div>
+        </div>
+      </div>
+      <div class="cockpit-utility-control">
+        <div class="cockpit-utility-launcher" data-cockpit-launcher="radio">
+          <span data-i18n="">RADIO</span>
+          <span class="cockpit-utility-divider" aria-hidden="true"></span>
+          <button id="cockpit-radio-toggle-btn" class="cockpit-utility-glyph" type="button" aria-expanded="false" aria-controls="cockpit-radio-panel" aria-label="Expand Cockpit Radio controls" title="Expand Cockpit Radio controls" data-i18n-aria-label="" data-i18n-title="">◀</button>
+        </div>
+        <div id="cockpit-radio-panel" class="cockpit-utility-popover cockpit-radio-compact" role="group" aria-label="Cockpit compact Radio controls" hidden="" data-i18n-aria-label="">
+          <strong id="cockpit-radio-station" class="cockpit-radio-station" data-i18n="">READY</strong>
+          <button id="cockpit-radio-enable-btn" class="panel-layer-toggle" type="button" aria-pressed="false" data-i18n="" aria-label="Enable Radio" aria-disabled="false" aria-busy="false">ENABLE</button>
+          <div class="cockpit-radio-transport">
+            <button id="cockpit-radio-prev-btn" type="button" aria-label="Previous filtered radio station" disabled="" data-i18n-aria-label="">◀◀</button>
+            <button id="cockpit-radio-play-btn" type="button" aria-label="Play nearest radio station" disabled="" data-i18n-aria-label="" title="Play">▶</button>
+            <button id="cockpit-radio-next-btn" type="button" aria-label="Next filtered radio station" disabled="" data-i18n-aria-label="">▶▶</button>
+          </div>
+          <label class="cockpit-radio-volume" for="cockpit-radio-volume">
+            <span data-i18n="">VOLUME</span>
+            <input id="cockpit-radio-volume" class="gev-quantitative-slider" type="range" min="0" max="100" value="80" aria-label="Cockpit Radio volume" disabled="" data-i18n-aria-label="">
+            <output id="cockpit-radio-volume-value" class="gev-slider-value" for="cockpit-radio-volume">80%</output>
+          </label>
+        </div>
+      </div>
+    </aside>
+    <div class="cockpit-help"><bdi data-i18n="">ESC EXIT</bdi> <span>·</span> <bdi data-i18n="">C TOGGLE</bdi></div>
+  </section>
+
+  <nav id="view-switcher" aria-label="View switcher" data-i18n-aria-label="">
+    <button id="cockpit-reset-globe" type="button" aria-label="Reset cockpit to full globe view" title="Exit cockpit and return to full globe view" hidden="" data-i18n-aria-label="" data-i18n-title="">
+      <span class="material-symbols-outlined" aria-hidden="true">public</span>
+      <span data-i18n="">RESET</span>
+    </button>
+    <button id="map-view-switch" type="button" aria-label="Exit cockpit view" aria-keyshortcuts="Escape C" title="Exit cockpit view" hidden="" data-i18n-aria-label="" data-i18n-title="">
+      <span class="material-symbols-outlined" aria-hidden="true">close_fullscreen</span>
+      <span data-i18n="">EXIT COCKPIT</span>
+    </button>
+  </nav>
+
+  <!-- Post-processing toggles (top-right) -->
+  
+  <button id="clean-view-exit" title="Return UI controls" data-i18n-title="" data-i18n="">EXIT CLEAN VIEW</button>
+
+  <!-- Unified bottom command dock: locations, voice (injected at runtime), visual presets -->
+  <div id="command-dock" aria-label="Navigation, voice, and visual preset controls" data-i18n-aria-label="" style="--dock-location-pinned-height: 0px; --dock-presets-pinned-height: 0px; --dock-lower-pinned-height: 0px; --dock-pinned-stack-height: 0px;">
+  <!-- Control panel -->
+  
+
+  <!-- Location bar -->
+  
+  <div id="location-bar" class="panel-collapsible collapsed" data-collapsed-preference="default">
+    <div class="panel-glow"></div>
+    <div class="location-inner">
+      <div class="location-toolbar">
+        <button id="location-bar-toggle" class="dock-tray-toggle" type="button" data-dock-toggle-target="location-bar" aria-controls="location-bar-popover" aria-expanded="false" aria-label="Expand LOCATION" title="Expand LOCATION" data-i18n-aria-label="" data-i18n-title="">
+          <span class="location-toolbar-label" data-i18n-runtime=""><span class="dock-label-icon dock-label-icon-location" aria-hidden="true"></span>LOCATION</span>
+        </button>
+        <button class="panel-collapse-btn" data-collapse-target="location-bar" title="Collapse panel" data-i18n-title="">+</button>
+      </div>
+      <div id="location-mini-status" class="location-mini-status" aria-live="polite">
+        <div id="location-mini-city" class="location-mini-city" data-i18n="">📍 Location: --</div>
+        <div id="location-mini-poi" class="location-mini-poi" data-i18n="">Landmark: --</div>
+      </div>
+      <div id="location-bar-popover" class="dock-popover-content">
+        <button class="dock-pin-btn" data-pin-target="location-bar" type="button" aria-label="Pin location tray" aria-pressed="false" title="Keep location tray open" data-i18n-aria-label="" data-i18n-title=""><img src="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/pin.svg" alt=""></button>
+        <div id="poi-row" class="poi-row-container"></div>
+        <div class="location-bar-divider" id="location-bar-divider"></div>
+        <div class="location-city-row">
+          <div id="location-pills" class="location-pills"><button type="button" class="location-pill" data-location-id="austin">Austin</button><button type="button" class="location-pill" data-location-id="sf">San Francisco</button><button type="button" class="location-pill" data-location-id="nyc">New York</button><button type="button" class="location-pill" data-location-id="tokyo">Tokyo</button><button type="button" class="location-pill" data-location-id="london">London</button><button type="button" class="location-pill" data-location-id="paris">Paris</button><button type="button" class="location-pill" data-location-id="dubai">Dubai</button><button type="button" class="location-pill" data-location-id="dc">Washington DC</button><button type="button" class="location-pill" data-location-id="tallinn">Tallinn</button></div>
+          <div class="location-search-wrap">
+            <button id="search-toggle" class="search-toggle-btn" title="Search any location" data-i18n-title="">
+              <span>🔎</span>
+            </button>
+            <input type="text" id="location-search" placeholder="Search any location..." autocomplete="off" spellcheck="false" aria-label="Search location by name or coordinates" data-i18n-aria-label="" data-i18n-placeholder="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><div id="gev-voice-control" data-status="idle" data-speaker="idle">
+      <div class="gev-voice-heading">
+        <div class="gev-voice-kicker">AI AGENT</div>
+        <div id="gev-voice-status">OFF</div>
+        <div class="gev-voice-cost">
+          <button id="gev-voice-tier" class="gev-voice-tier-btn" type="button" aria-pressed="false" title="Voice model: gpt-realtime-2 — click to switch to mini; applies next session">STD</button>
+          <span id="gev-voice-cost-value" class="gev-voice-cost-value" data-level="ok" title="Estimated session cost on gpt-realtime-2 — 0 response(s). Warns at ~$2.00, ends the session at ~$5.00.">~$0.00</span>
+        </div>
+      </div>
+      <button id="gev-voice-button" type="button" aria-label="Voice control — activate to toggle voice; hold Space to speak" aria-describedby="gev-voice-help">
+        <span class="gev-mic-orbit"><img src="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/mic.svg" alt=""></span>
+        <span class="gev-mic-label">ON/OFF</span>
+      </button>
+      <div class="gev-voice-visualizer" aria-hidden="true">
+        <span style="--bar:0"></span><span style="--bar:1"></span><span style="--bar:2"></span><span style="--bar:3"></span><span style="--bar:4"></span><span style="--bar:5"></span><span style="--bar:6"></span><span style="--bar:7"></span><span style="--bar:8"></span><span style="--bar:9"></span><span style="--bar:10"></span><span style="--bar:11"></span><span style="--bar:12"></span><span style="--bar:13"></span><span style="--bar:14"></span>
+      </div>
+      <div class="gev-voice-readout">
+        <div id="gev-voice-detail">VOICE STANDBY</div>
+      </div>
+      <div id="gev-voice-help" class="gev-voice-help-tray" role="tooltip">
+        <span class="gev-voice-help-kicker">VOICE CONTROL</span>
+        <span class="gev-voice-help-detail">Hold Space to speak · tap Space to activate focused controls</span>
+      </div>
+      <section id="gev-voice-card" class="gev-voice-card" hidden="" aria-label="Voice assistant" data-busy="false">
+        <div class="gev-voice-card-header">
+          <span class="gev-voice-card-kicker">VOICE</span>
+          <span id="gev-voice-card-phase" class="gev-voice-card-phase"></span>
+          <button id="gev-voice-card-dismiss" class="gev-voice-card-dismiss" type="button" aria-label="Dismiss voice card">×</button>
+        </div>
+        <p id="gev-voice-card-user" class="gev-voice-card-caption" data-role="user" hidden=""><span class="gev-voice-card-who">YOU</span><span id="gev-voice-card-user-text" class="gev-voice-card-text">…</span></p>
+        <p id="gev-voice-card-pointer" class="gev-voice-card-pointer" hidden=""><span id="gev-voice-card-pointer-kind" class="gev-voice-card-who">THIS</span><span class="gev-voice-card-sr">: </span><span id="gev-voice-card-pointer-text" class="gev-voice-card-pointer-label"></span></p>
+        <p id="gev-voice-card-assistant" class="gev-voice-card-caption" data-role="assistant" hidden=""><span class="gev-voice-card-who">GEV</span><span id="gev-voice-card-assistant-text" class="gev-voice-card-text"></span></p>
+        <ol id="gev-voice-card-plan" class="gev-voice-card-plan" aria-label="Plan" hidden=""></ol>
+        <div id="gev-voice-card-result" class="gev-voice-card-result" hidden="">
+          <div id="gev-voice-card-result-title" class="gev-voice-card-result-title"></div>
+          <div id="gev-voice-card-chips" class="gev-voice-card-chips" hidden=""></div>
+          <ul id="gev-voice-card-lines" class="gev-voice-card-lines"></ul>
+          <ol id="gev-voice-card-referents" class="gev-voice-card-referents" aria-label="Referenced items" hidden=""></ol>
+          <details id="gev-voice-card-notes" class="gev-voice-card-notes" hidden="">
+            <summary>NOTES &amp; SOURCES</summary>
+            <ul id="gev-voice-card-note-list" class="gev-voice-card-lines"></ul>
+          </details>
+        </div>
+        <div id="gev-voice-card-live" class="gev-voice-card-sr" aria-live="polite" aria-atomic="true"></div>
+      </section>
+      <div class="gev-voice-error-tray" role="alert" aria-live="assertive">
+        <div class="gev-voice-error-header">
+          <span>VOICE SYSTEM ERROR</span>
+          <button class="gev-voice-error-dismiss" type="button">DISMISS</button>
+        </div>
+        <div id="gev-voice-error-detail"></div>
+        <div class="gev-voice-error-hint">Check microphone permission and network access, then try again.</div>
+      </div>
+    </div><div id="control-panel" class="panel-collapsible collapsed">
+    <div class="panel-glow"></div>
+    <div class="panel-inner">
+      <button id="control-panel-toggle" class="panel-header dock-tray-toggle" type="button" data-dock-toggle-target="control-panel" aria-expanded="false" aria-controls="control-panel-popover" aria-label="Expand VISUAL PRESETS" data-i18n-aria-label="" title="Expand VISUAL PRESETS">
+        <span class="panel-title" data-i18n-runtime=""><span class="dock-label-icon dock-label-icon-presets" aria-hidden="true"></span>VISUAL PRESETS</span>
+        <span class="panel-divider"></span>
+      </button>
+      <div id="control-panel-popover" class="dock-popover-content">
+      <button class="dock-pin-btn" data-pin-target="control-panel" type="button" aria-label="Pin visual presets" aria-pressed="false" title="Keep visual presets open" data-i18n-aria-label="" data-i18n-title=""><img src="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/pin.svg" alt=""></button>
+      <div id="style-buttons" class="button-grid">
+        <button class="style-btn active" data-style="normal" title="Show the globe without a visual filter." data-i18n-title="">
+          <span class="btn-icon">◯</span>
+          <span class="btn-label" data-i18n="">Normal</span>
+          <span class="btn-key">1</span>
+        </button>
+        <button class="style-btn" data-style="retro" title="Emulate a green phosphor CRT with scanlines and screen curvature." data-i18n-title="">
+          <span class="btn-icon">▦</span>
+          <span class="btn-label" data-i18n="">CRT</span>
+          <span class="btn-key">2</span>
+        </button>
+        <button class="style-btn" data-style="surveillance" title="Simulate night-vision goggles with green intensification and a tube vignette." data-i18n-title="">
+          <span class="btn-icon">🌙</span>
+          <span class="btn-label" data-i18n="">NVG</span>
+          <span class="btn-key">3</span>
+        </button>
+        <button class="style-btn" data-style="thermal" title="Simulate FLIR-style thermal contrast. Turn up Ironbow for color." data-i18n-title="">
+          <span class="btn-icon">🌡️</span>
+          <span class="btn-label" data-i18n="">FLIR</span>
+          <span class="btn-key">4</span>
+        </button>
+        <button class="style-btn" data-style="anime" title="Apply bright cel-shaded color and illustrated outlines." data-i18n-title="">
+          <span class="btn-icon">✦</span>
+          <span class="btn-label" data-i18n="">Anime</span>
+          <span class="btn-key">5</span>
+        </button>
+        <button class="style-btn" data-style="noir" title="Apply high-contrast monochrome film-noir grading." data-i18n-title="">
+          <span class="btn-icon">◐</span>
+          <span class="btn-label" data-i18n="">Noir</span>
+          <span class="btn-key">6</span>
+        </button>
+        <button class="style-btn" data-style="snow" title="Add a cold, snowy whiteout treatment to the scene." data-i18n-title="">
+          <span class="btn-icon">❄</span>
+          <span class="btn-label" data-i18n="">Snow</span>
+          <span class="btn-key">7</span>
+        </button>
+      </div>
+      <section class="map-source-section" aria-labelledby="map-source-label">
+        <div class="map-source-heading">
+          <span data-i18n="" id="map-source-label">MAP SOURCE</span>
+          <span id="map-stack-status" class="pp-stack-status" aria-live="polite">SAT</span>
+        </div>
+        <div id="map-stack-chips" class="map-stack-chip-row" role="group" aria-label="Map source" data-i18n-aria-label=""><button type="button" class="map-stack-chip unavailable" data-stack-id="photoreal" title="Needs GOOGLE_MAPS_API_KEY — add it in Provider Settings — or a Cesium ion token for the ion-hosted route" aria-pressed="false" aria-disabled="true" aria-label="Google 3D unavailable: Needs GOOGLE_MAPS_API_KEY — add it in Provider Settings — or a Cesium ion token for the ion-hosted route"><span class="map-stack-chip-label">Google 3D</span></button><button type="button" class="map-stack-chip unavailable" data-stack-id="bing-aerial" title="Needs CESIUM_ION_TOKEN — add it in Provider Settings" aria-pressed="false" aria-disabled="true" aria-label="Bing Aerial unavailable: Needs CESIUM_ION_TOKEN — add it in Provider Settings"><span class="map-stack-chip-label">Bing Aerial</span><span class="map-stack-chip-req">ION</span></button><button type="button" class="map-stack-chip unavailable" data-stack-id="bing-labels" title="Needs CESIUM_ION_TOKEN — add it in Provider Settings" aria-pressed="false" aria-disabled="true" aria-label="Bing Labels unavailable: Needs CESIUM_ION_TOKEN — add it in Provider Settings"><span class="map-stack-chip-label">Bing Labels</span><span class="map-stack-chip-req">ION</span></button><button type="button" class="map-stack-chip active" data-stack-id="esri-imagery" title="Esri Satellite" aria-pressed="true" aria-disabled="false"><span class="map-stack-chip-label">Esri Satellite</span></button><button type="button" class="map-stack-chip" data-stack-id="osm" title="OSM" aria-pressed="false" aria-disabled="false"><span class="map-stack-chip-label">OSM</span></button></div>
+      </section>
+      </div>
+      <div id="style-mini-status" class="panel-mini-status" aria-live="polite">
+        <span class="panel-mini-label" data-i18n="">Style</span>
+        <span id="style-mini-value" class="panel-mini-value" data-i18n="">NORMAL</span>
+      </div>
+    </div>
+  </div></div>
+
+  <div id="left-panel-stack" data-layout-mode="normal" data-safe-top-pct="36.50" data-safe-bottom-pct="63.50" data-available-height-pct="27.00" data-required-height-pct="14.92" data-tail-available-height-pct="39.09" data-expanded-count="0" style="--left-stack-safe-top: 36.501vh; --left-stack-safe-bottom: 36.501vh;">
+  <!-- Data Layer Toggle Panel -->
+  <div id="data-panel" class="panel-collapsible collapsed active" data-panel-id="data-panel" data-collapsed-preference="default">
+    <div class="panel-glow"></div>
+    <div class="data-panel-inner">
+      <div class="panel-header">
+        <span class="panel-title" data-i18n="">DATA LAYERS</span>
+        <span class="panel-divider"></span>
+        <button class="panel-collapse-btn" data-collapse-target="data-panel" title="Expand DATA LAYERS" data-i18n-title="" aria-expanded="false" aria-label="Expand DATA LAYERS">+</button>
+      </div>
+      <div id="data-toggles" class="data-toggle-list"><h3 class="data-layer-group-heading">Movement</h3><div class="data-toggle-row" data-layer-id="satellites" data-layer-name="Satellites"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">🛰️</span><span class="data-name" data-orig-text="Satellites">Vệ tinh nhân tạo</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Satellites: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>CelesTrak</span><span class="data-keep"> ·</span><span> never</span></div><div class="data-toggle-controls" hidden=""></div><ol class="data-row-list" hidden="" aria-label=""></ol></div><div class="data-toggle-row" data-layer-id="flights" data-layer-name="Live Flights"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">✈️</span><span class="data-name">Live Flights</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Live Flights: OFF">OFF</button></div></div><div class="data-toggle-meta"><span data-orig-text="Flights">Chuyến bay dân dụng</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="military" data-layer-name="Military Flights"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">🎖️</span><span class="data-name">Military Flights</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Military Flights: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>Military aircraft</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="local-adsb" data-layer-name="Local ADS-B"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">📡</span><span class="data-name" data-orig-text="Local ADS-B">Trạm thu ADS-B mặt đất</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Local ADS-B: OFF">OFF</button></div></div><div class="data-toggle-meta"><span class="data-keep">RTL-SDR</span><span class="data-keep"> ·</span><span> WebUSB</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="ais-live-vessels" data-layer-name="Live Vessels"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">◭</span><span class="data-name" data-orig-text="Live Vessels">Tàu biển thương mại (AIS)</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Live Vessels: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>Vessels</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="traffic" data-layer-name="Street Traffic"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">🚗</span><span class="data-name">Street Traffic</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Street Traffic: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>OpenStreetMap / TomTom</span><span class="data-keep"> ·</span><span> never</span></div><div class="data-toggle-controls" hidden=""></div><ol class="data-row-list" hidden="" aria-label=""></ol></div><div class="data-toggle-row" data-layer-id="transit" data-layer-name="Transit"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">🚌</span><span class="data-name" data-orig-text="Transit">Giao thông công cộng</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Transit: OFF">OFF</button></div></div><div class="data-toggle-meta"><span class="data-keep">GTFS-RT</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="bikeshare" data-layer-name="Bike Share"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">🚲</span><span class="data-name" data-orig-text="Bike Share">Trạm xe đạp công cộng</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Bike Share: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>GBFS</span><span class="data-keep"> ·</span><span> never</span></div></div><h3 class="data-layer-group-heading">Cameras</h3><div class="data-toggle-row" data-layer-id="cctv" data-layer-name="Cameras"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">📹</span><span class="data-name" data-orig-text="Cameras">Camera &amp; Quan sát</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Cameras: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>CCTV + Street View fallback</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="recent-imagery" data-layer-name="Recent Imagery"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">🛰</span><span class="data-name" data-orig-text="Recent Imagery">Ảnh viễn thám mới</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Recent Imagery: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>NASA GIBS</span><span class="data-keep"> ·</span><span> HLS + VIIRS</span><span class="data-keep"> ·</span><span> never</span></div><div class="data-toggle-controls" hidden=""></div><ol class="data-row-list" hidden="" aria-label=""></ol></div><div class="data-toggle-row" data-layer-id="street-level" data-layer-name="Street Level"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">📷</span><span class="data-name">Street Level</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Street Level: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>Mapillary</span><span class="data-keep"> ·</span><span> KartaView</span><span class="data-keep"> ·</span><span> Panoramax</span><span class="data-keep"> ·</span><span> never</span></div></div><h3 class="data-layer-group-heading">Infrastructure</h3><div class="data-toggle-row" data-layer-id="alpr-cameras" data-layer-name="Mapped ALPR Cameras"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">📷</span><span class="data-name" data-orig-text="Mapped ALPR Cameras">Camera nhận diện biển số ALPR</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Mapped ALPR Cameras: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>OpenStreetMap</span><span class="data-keep"> ·</span><span> community mapped</span><span class="data-keep"> ·</span><span> never</span></div><div class="data-toggle-controls" hidden=""></div><ol class="data-row-list" hidden="" aria-label=""></ol></div><div class="data-toggle-row" data-layer-id="military-installations" data-layer-name="Mapped Installations"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">⌖</span><span class="data-name">Mapped Installations</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Mapped Installations: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>OpenStreetMap + optional Google Maps Places</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="local-datacenters" data-layer-name="Data Centers"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">▣</span><span class="data-name" data-orig-text="Data Centers">Trung tâm dữ liệu toàn cầu</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Data Centers: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>Local</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="telegeography-submarine-cables" data-layer-name="Submarine Cables"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">≋</span><span class="data-name" data-orig-text="Submarine Cables">Tuyến cáp quang biển</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Submarine Cables: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>TeleGeography</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="local-dams" data-layer-name="Dams"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">▰</span><span class="data-name">Dams</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Dams: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>USACE</span><span class="data-keep"> ·</span><span> never</span></div></div><h3 class="data-layer-group-heading">Events</h3><div class="data-toggle-row" data-layer-id="rocket-launches" data-layer-name="Space Missions (30d)"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">🚀</span><span class="data-name">Space Missions (30d)</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Space Missions (30d): OFF">OFF</button></div></div><div class="data-toggle-meta"><span>Launch Library 2</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="earthquakes" data-layer-name="Earthquakes (24h)"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">🌋</span><span class="data-name">Earthquakes (24h)</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Earthquakes (24h): OFF">OFF</button></div></div><div class="data-toggle-meta"><span>USGS</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="local-firms" data-layer-name="Active Fires"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">▲</span><span class="data-name" data-orig-text="Active Fires">Điểm cháy rừng (NASA FIRMS)</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Active Fires: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>NASA FIRMS</span><span class="data-keep"> ·</span><span> LIVE</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="fire-perimeters" data-layer-name="Fire Perimeters"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">🔥</span><span class="data-name" data-orig-text="Fire Perimeters">Ranh giới vùng cháy</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Fire Perimeters: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>NIFC WFIGS</span><span class="data-keep"> ·</span><span> never</span></div><div class="data-toggle-controls" hidden=""></div><ol class="data-row-list" hidden="" aria-label=""></ol></div><div class="data-toggle-row" data-layer-id="gnss-integrity" data-layer-name="GNSS Integrity"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">📡</span><span class="data-name">GNSS Integrity</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="GNSS Integrity: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>adsb.lol</span><span class="data-keep"> ·</span><span> never</span></div><div class="data-toggle-controls" hidden=""></div><ol class="data-row-list" hidden="" aria-label=""></ol></div><h3 class="data-layer-group-heading">Weather</h3><div class="data-toggle-row" data-layer-id="air-quality" data-layer-name="Air quality"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">◍</span><span class="data-name">Air quality</span></div><div class="data-toggle-right"><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Air quality: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>ECCC MSC GeoMet</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="wind" data-layer-name="Wind"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">🌬</span><span class="data-name" data-orig-text="Wind">Luồng gió toàn cầu</span></div><div class="data-toggle-right"><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Wind: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>GFS / ECMWF IFS</span><span class="data-keep"> ·</span><span> FORECAST</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="weather-radar" data-layer-name="Rain radar"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">◉</span><span class="data-name">Rain radar</span></div><div class="data-toggle-right"><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Rain radar: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>NOAA nowCOAST</span><span class="data-keep"> ·</span><span> OBSERVED</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="weather-satellite" data-layer-name="Satellite clouds"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">☁</span><span class="data-name">Satellite clouds</span></div><div class="data-toggle-right"><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Satellite clouds: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>NOAA nowCOAST</span><span class="data-keep"> ·</span><span> OBSERVED</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="weather-lightning" data-layer-name="Lightning density"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">ϟ</span><span class="data-name">Lightning density</span></div><div class="data-toggle-right"><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Lightning density: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>NOAA nowCOAST</span><span class="data-keep"> ·</span><span> OBSERVED</span><span class="data-keep"> ·</span><span> never</span></div></div><div class="data-toggle-row" data-layer-id="weather-cyclones" data-layer-name="Cyclone advisories"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">◉</span><span class="data-name">Cyclone advisories</span></div><div class="data-toggle-right"><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Cyclone advisories: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>NOAA NHC / CPHC</span><span class="data-keep"> ·</span><span> never</span></div></div><h3 class="data-layer-group-heading">Utilities</h3><div class="data-toggle-row" data-layer-id="directions" data-layer-name="Directions"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">🧭</span><span class="data-name" data-orig-text="Directions">Chỉ đường &amp; Lộ trình</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Directions: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>OSM routing</span><span class="data-keep"> ·</span><span> never</span></div><div class="data-toggle-controls" hidden=""></div><ol class="data-row-list" hidden="" aria-label=""></ol></div><div class="data-toggle-row" data-layer-id="radio" data-layer-name="Radio"><div class="data-toggle-top"><div class="data-toggle-left"><span class="data-icon" aria-hidden="true">◉</span><span class="data-name" data-orig-text="Radio">Đài phát thanh thế giới</span></div><div class="data-toggle-right"><span class="data-count data-count-empty">—</span><button type="button" class="data-toggle-btn" data-feed-state="off" aria-disabled="false" aria-busy="false" title="" aria-label="Radio: OFF">OFF</button></div></div><div class="data-toggle-meta"><span>Radio Browser</span><span class="data-keep"> ·</span><span> never</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- CCTV Coverage Panel -->
+  
+
+  <!-- Street Level Panel (moved into #right-context-rail at runtime) -->
+  
+
+  <!-- Scene Director Panel -->
+  <div id="scene-panel" class="panel-collapsible collapsed" data-panel-id="scene-panel" data-collapsed-preference="default">
+    <div class="panel-glow"></div>
+    <div class="scene-panel-inner">
+      <div class="panel-header">
+        <span class="panel-title" data-i18n="">SCENES</span>
+        <span class="panel-divider"></span>
+        <button class="panel-collapse-btn" data-collapse-target="scene-panel" title="Expand SCENES" data-i18n-title="" aria-expanded="false" aria-label="Expand SCENES">+</button>
+      </div>
+      <div class="scene-controls">
+        <select id="scene-select" aria-label="Scene recipe" data-i18n-aria-label=""><option value="bhote-koshi-nepal-scene">Nepal Flood Incident</option><option value="flights-radar">Global Flights Radar</option><option value="orbital-watch">Orbital Watch</option><option value="thermal-threats">Thermal Threat Board</option><option value="city-overload">City Overload</option><option value="omniscience-pullback">Omniscience Pullback</option></select>
+        <button id="scene-new-btn" class="scene-btn" data-i18n="">NEW</button>
+        <button id="scene-delete-btn" class="scene-btn scene-btn-danger" data-i18n="">DEL</button>
+      </div>
+      <div class="scene-controls">
+        <button id="scene-capture-btn" class="scene-btn" data-i18n="">CAPTURE SHOT</button>
+        <button id="scene-update-shot-btn" class="scene-btn" data-i18n="">UPDATE SHOT</button>
+      </div>
+      <div id="scene-shot-list" class="scene-shot-list"><div class="scene-shot-row active" data-scene-shot-id="shot-q2y8gfha"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Global Incident Context</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.0s + 0.9s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-fe6nm23p"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Nepal-Focused Globe Rotation</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.0s + 0.9s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-j2ur6pk4"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Bhote Koshi Regional Approach</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.0s + 0.9s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-9nmx9shq"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Bhote Koshi Nearby Cities</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.0s + 0.9s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-plqe4n3w"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Bhote Koshi Incident Corridor</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.0s + 11.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-c2pgay54"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Bhote Koshi Flood Path</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.0s + 0.9s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-nqihgvcm"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Bhote Koshi Corridor Overview</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.0s + 0.9s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-84y43qhr"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Bhote Koshi Upper Valley</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.0s + 8.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-4cakn0yw"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Upper Valley Collapse</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 1.4s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-aftrctrx"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Debris-Dammed Lake</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 1.4s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-uqo71god"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Second landslide</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 11.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-k721c5gu"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Nepal-China Border Gate</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 2.5s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-n98m3kin"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Timure Evidence Cluster</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 4.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-raco0ez0"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Syabru Besi Passage</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 4.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-5gbygoy7"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Dhunche</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 16.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-obz6o47a"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Mailung / Upper Trishuli bridge</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 13.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-npsopm6w"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Mailung Bazzar, Dandaguan</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 15.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-ugvqc8zk"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Dandagaun, Rasuwa</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 15.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-ntj57xnn"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Dandagaun viewpoint restaurant</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 13.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-t72rud46"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Betrawati Bazaar</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 12.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-k7hspjfa"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Bhainse</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 13.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-h3j290ka"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Bidur / Trishuli Consequence</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 4.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-cayp61xm"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Devighat / Taadi Khola Bridge</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 13.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-he49kdhg"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Charaudi</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.2s + 11.0s</div></div><div class="scene-shot-row" data-scene-shot-id="shot-o0qnwb2m"><div class="scene-shot-top"><div class="scene-shot-label" title="Double-click to rename">Final view</div><div class="scene-shot-actions"><button class="scene-shot-btn">LOAD</button><button class="scene-shot-btn scene-shot-danger">DEL</button></div></div><div class="scene-shot-meta">NORMAL · OFF · 4.0s + 11.0s</div></div></div>
+      <div class="scene-controls">
+        <button id="scene-start-btn" class="scene-btn" data-i18n="">START</button>
+        <button id="scene-stop-btn" class="scene-btn scene-btn-danger" data-i18n="" disabled="">STOP</button>
+        <button id="scene-next-btn" class="scene-btn" data-i18n="">NEXT</button>
+      </div>
+      <div class="scene-controls">
+        <button id="scene-export-btn" class="scene-btn" data-i18n="">EXPORT PRESETS</button>
+        <button id="scene-import-btn" class="scene-btn" data-i18n="">IMPORT</button>
+        <button id="scene-download-btn" class="scene-btn" data-i18n="" disabled="">RUN LOG</button>
+        <input type="file" id="scene-import-file" accept="application/json,.json" hidden="">
+      </div>
+      <div class="scene-progress">
+        <div id="scene-progress-fill" style="width: 0%;">0%</div>
+      </div>
+      <div id="scene-status" data-i18n="">Ready</div>
+    <div data-director-authoring="" class="scene-controls"><button type="button" class="scene-btn">EDIT DETAILS</button><button type="button" class="scene-btn">SHARE SCENE</button></div></div>
+  </div>
+
+  </div>
+
+  <!-- Global Context is deliberately independent from the left layer accordion. -->
+  <aside id="right-context-rail" data-layout-mode="focus" data-safe-top="264.3" data-safe-bottom="520.4" data-available-height="256.2" data-required-height="280.0" data-expanded-count="0" style="--right-stack-safe-top: 264.3px; --right-stack-max-height: 256.2px;" class="layout-focus"><div id="pp-toggles" class="panel-collapsible collapsed" data-panel-id="pp-toggles" data-collapsed-preference="default">
+    <div class="compact pp-header-row">
+      <span data-i18n="" class="pp-header-label">DISPLAY</span>
+      <span class="panel-divider" aria-hidden="true"></span>
+      <button class="panel-collapse-btn pp-collapse-btn" data-collapse-target="pp-toggles" title="Expand DISPLAY" data-i18n-title="" aria-expanded="false" aria-label="Expand DISPLAY">◀</button>
+    </div>
+    <div class="pp-panel-body" data-rail-scroller="">
+    <!--cockpit-display-home:hud--><div class="pp-toggle-group">
+      <button class="pp-toggle-btn active" id="hud-toggle" title="Intelligence HUD (H)" data-i18n-title="">
+        <span class="pp-icon">◎</span>
+        <span class="pp-label" translate="no">HUD</span>
+      </button>
+      <div class="pp-slider-row visible" id="hud-layout-row">
+        <span class="pp-slider-mini-label" data-i18n="">Layout</span>
+        <select id="hud-layout-select" class="pp-select" aria-label="HUD layout" data-i18n-aria-label="">
+          <option value="tactical" data-i18n="">Tactical</option>
+          <option value="operator" data-i18n="">Operator</option>
+          <option value="minimal" data-i18n="">Minimal</option>
+          <option value="cyber" data-i18n="">Cyber</option>
+        </select>
+      </div>
+      <div class="pp-slider-row cyber-sonar-control cyber-sonar-toggle-row" id="cyber-sonar-row">
+        <span class="pp-slider-mini-label" data-i18n="">Sonar</span>
+        <button class="pp-mode-btn active" id="cyber-sonar-toggle" title="Cyber sonar contact scanner" aria-label="Cyber sonar contact scanner" aria-pressed="true" data-i18n-title="" data-i18n-aria-label="" data-i18n="">ON</button>
+      </div>
+      <output id="cyber-sonar-status" class="cyber-sonar-control" role="status"></output>
+      <div class="pp-slider-row cyber-sonar-control cyber-sonar-setting" id="cyber-sonar-rings-row">
+        <label class="pp-slider-mini-label" for="cyber-sonar-rings" data-i18n="">Rings</label>
+        <input type="range" class="pp-slider" id="cyber-sonar-rings" min="3" max="12" step="1" value="8" aria-label="Sonar ring count" data-i18n-aria-label="">
+        <span class="pp-slider-value" id="cyber-sonar-rings-value">8</span>
+      </div>
+      <div class="pp-slider-row cyber-sonar-control cyber-sonar-setting" id="cyber-sonar-range-row">
+        <label class="pp-slider-mini-label" for="cyber-sonar-range" data-i18n="">Range</label>
+        <input type="range" class="pp-slider" id="cyber-sonar-range" min="60" max="120" step="1" value="100" aria-label="Sonar ring range" data-i18n-aria-label="">
+        <span class="pp-slider-value" id="cyber-sonar-range-value">100%</span>
+      </div>
+      <div class="pp-slider-row cyber-sonar-control cyber-sonar-setting" id="cyber-sonar-intensity-row">
+        <label class="pp-slider-mini-label" for="cyber-sonar-intensity" data-i18n="">Power</label>
+        <input type="range" class="pp-slider" id="cyber-sonar-intensity" min="0" max="100" step="1" value="70" aria-label="Sonar intensity" data-i18n-aria-label="">
+        <span class="pp-slider-value" id="cyber-sonar-intensity-value">70%</span>
+      </div>
+      <div class="pp-slider-row cyber-sonar-control cyber-sonar-setting" id="cyber-sonar-opacity-row">
+        <label class="pp-slider-mini-label" for="cyber-sonar-opacity" data-i18n="">Opacity</label>
+        <input type="range" class="pp-slider" id="cyber-sonar-opacity" min="35" max="100" step="1" value="84" aria-label="Cyber contact and label opacity" title="Minimum opacity for map dots, icons, models, brackets, and labels between sonar passes" data-i18n-aria-label="" data-i18n-title="">
+        <span class="pp-slider-value" id="cyber-sonar-opacity-value">84%</span>
+      </div>
+      <div class="pp-slider-row cyber-sonar-control cyber-sonar-setting" id="cyber-sonar-sector-row">
+        <label class="pp-slider-mini-label" for="cyber-sonar-sector" data-i18n="">Sector</label>
+        <input type="range" class="pp-slider" id="cyber-sonar-sector" min="8" max="60" step="1" value="24" aria-label="Sonar sector width" data-i18n-aria-label="">
+        <span class="pp-slider-value" id="cyber-sonar-sector-value">24°</span>
+      </div>
+    </div>
+    <!--cockpit-display-home:detection--><div class="pp-toggle-group">
+      <button class="pp-toggle-btn active panoptic" id="detection-toggle" title="Detection Overlay (D)" aria-label="Detection overlay: dense" aria-pressed="true" data-i18n-title="" data-i18n-aria-label="">
+        <span class="pp-icon">▣</span>
+        <span class="pp-label" data-i18n="">DENSE</span>
+      </button>
+      <div class="pp-slider-row detection-slider-row visible" id="detection-slider-row">
+        <label class="pp-slider-mini-label" for="detection-density-slider" data-i18n="">Density</label>
+        <input type="range" class="pp-slider" id="detection-density-slider" min="0" max="100" step="25" value="50" aria-label="Detection label density" data-i18n-aria-label="">
+        <span class="pp-slider-value" id="detection-density-value">75%</span>
+      </div>
+      <div class="pp-slider-row detection-allocation-row visible" id="detection-allocation-row">
+        <span class="pp-slider-mini-label" data-i18n="">Allocation</span>
+        <div class="pp-mode-seg detection-allocation-seg" role="radiogroup" aria-label="Detection label allocation" data-i18n-aria-label="">
+          <button class="pp-mode-btn active" id="detection-allocation-elastic" data-allocation="ELASTIC" role="radio" aria-checked="true" data-i18n="">Elastic</button>
+          <button class="pp-mode-btn" id="detection-allocation-weighted" data-allocation="WEIGHTED" role="radio" aria-checked="false" data-i18n="">Weighted</button>
+        </div>
+      </div>
+      <div class="pp-slider-row detection-fade-row visible" id="detection-fade-row">
+        <label class="pp-slider-mini-label" for="detection-fade-slider" data-i18n="">Fade</label>
+        <input type="range" class="pp-slider" id="detection-fade-slider" min="0" max="40" step="1" value="7" aria-label="Detection fade distance" title="World-overlay fade distance outside the keyhole as a percentage of its radius" data-i18n-aria-label="" data-i18n-title="">
+        <span class="pp-slider-value" id="detection-fade-value">7%</span>
+      </div>
+      <div class="pp-slider-row detection-opacity-row visible" id="detection-opacity-row">
+        <label class="pp-slider-mini-label" for="detection-opacity-slider" data-i18n="">Outside</label>
+        <input type="range" class="pp-slider" id="detection-opacity-slider" min="0" max="100" step="1" value="1" aria-label="Detection opacity outside the keyhole" title="World-overlay label and card opacity beyond the fade distance" data-i18n-aria-label="" data-i18n-title="">
+        <span class="pp-slider-value" id="detection-opacity-value">1%</span>
+      </div>
+    </div><!--cockpit-display-home:parameters--><div id="param-slider-panel" data-collapsed-preference="default">
+      <div class="param-panel-header">
+        <span class="param-panel-title" data-i18n="">PARAMETERS</span>
+        <span class="param-panel-divider"></span>
+        <button class="panel-collapse-btn" id="param-panel-collapse-btn" data-collapse-target="param-slider-panel" title="Collapse panel" data-i18n-title="" aria-expanded="true" aria-label="Collapse panel">−</button>
+      </div>
+      <div id="param-sliders"></div>
+    </div>
+    <!-- The one shared preset-parameter surface is inserted here at runtime. -->
+    
+    <!--cockpit-display-home:models3d--><div class="pp-toggle-group">
+      <!-- 3D aircraft is DEFAULT-ON in Proximity (owner directive 2026-08-22), so the
+           button ships lit and the mode row ships open — the same markup-carries-the-default
+           convention as #scope-toggle. ui.js re-syncs both from durable layer state, which
+           is what flips them back for a share link or a stored session carrying 3D off. -->
+      <button class="pp-toggle-btn active" id="models3d-toggle" aria-pressed="true" title="3D aircraft — flat icons zoomed out, 3D models up close" data-i18n-title="">
+        <span class="pp-icon">✈</span>
+        <span class="pp-label">3D</span>
+      </button>
+      <div class="pp-slider-row visible" id="models3d-mode-row">
+        <span class="pp-slider-mini-label" data-i18n="">Models</span>
+        <div class="pp-mode-seg" role="radiogroup" aria-label="3D model coverage" data-i18n-aria-label="">
+          <button class="pp-mode-btn active" id="models3d-mode-proximity" data-mode="proximity" role="radio" aria-checked="true" data-i18n="">Proximity</button>
+          <button class="pp-mode-btn" id="models3d-mode-all" data-mode="all" role="radio" aria-checked="false" data-i18n="">All</button>
+        </div>
+      </div>
+    </div>
+    <div class="pp-toggle-group">
+      <button class="pp-toggle-btn active" id="scope-toggle" title="Scope — the circular viewport mask" aria-pressed="true" data-i18n-title="">
+        <span class="pp-icon material-symbols-outlined" aria-hidden="true">adjust</span>
+        <span class="pp-label" data-i18n="">Scope</span>
+      </button>
+      <div class="pp-slider-row visible" id="scope-slider-row">
+        <span class="pp-slider-mini-label" data-i18n="">Feather</span>
+        <!-- Feather starts at an 11% soft scope-mask edge (owner final lock
+             2026-08-24, superseding the 08-22 hard-crop and 08-23 8% rulings);
+             mirrors SCOPE_FEATHER_RATIO_DEFAULT in src/scopeMask.js. Feather
+             softens the black mask edge; label fading is the separate Fade
+             slider. -->
+        <input type="range" class="pp-slider" id="scope-feather-slider" min="0" max="100" value="11" aria-label="Scope edge feather" title="Scope edge feather as a percentage of the keyhole radius" data-i18n-aria-label="" data-i18n-title="">
+        <span class="pp-slider-value" id="scope-feather-value">11%</span>
+      </div>
+    </div>
+    <div class="pp-toggle-group">
+      <button class="pp-toggle-btn" id="draw-toggle" title="Draw on the world — click vertices, double-click or Enter to finish, Esc to cancel" aria-pressed="false" data-i18n-title="">
+        <span class="pp-icon material-symbols-outlined" aria-hidden="true">draw</span>
+        <span class="pp-label" data-i18n="">Draw</span>
+      </button>
+      <div class="pp-slider-row" id="draw-mode-row">
+        <span class="pp-slider-mini-label" data-i18n="">Shape</span>
+        <div class="pp-mode-seg" role="radiogroup" aria-label="Shape to draw" data-i18n-aria-label="">
+          <button class="pp-mode-btn active" data-shape="area" role="radio" aria-checked="true" data-i18n="">Area</button>
+          <button class="pp-mode-btn" data-shape="line" role="radio" aria-checked="false" data-i18n="">Line</button>
+          <button class="pp-mode-btn" data-shape="pin" role="radio" aria-checked="false" data-i18n="">Pin</button>
+        </div>
+      </div>
+      <div class="pp-slider-row" id="draw-label-row">
+        <input type="text" class="pp-text-input" id="draw-label-input" maxlength="120" placeholder="Label (optional)" aria-label="Label for the drawn shape" data-i18n-placeholder="" data-i18n-aria-label="" autocomplete="off" spellcheck="false">
+        <select class="pp-select draw-color-select" id="draw-color-select" aria-label="Colour of the drawn shape" data-i18n-aria-label="">
+          <option value="primary" data-i18n="">Primary</option>
+          <option value="amber" data-i18n="">Amber</option>
+          <option value="cyan" data-i18n="">Cyan</option>
+          <option value="green" data-i18n="">Green</option>
+          <option value="red" data-i18n="">Red</option>
+        </select>
+        <button class="pp-mode-btn draw-clear-btn" id="draw-clear" type="button" title="Remove every mark from the board" data-i18n-title="" data-i18n="">Clear</button>
+        <span class="draw-hint" id="draw-hint" aria-live="polite">Pick a shape, then click the map.</span>
+      </div>
+    </div>
+    <div class="pp-toggle-group" id="geo-import-group">
+      <button class="pp-toggle-btn" id="geo-import-button" type="button" title="Show your own GeoJSON, KML, KMZ or GPX files on the globe (or drop them onto it). File bytes stay on this device; overlays can appear in map screenshots shared with voice." data-i18n-title="">
+        <span class="pp-icon material-symbols-outlined" aria-hidden="true">upload_file</span>
+        <span class="pp-label" data-i18n="">Import</span>
+      </button>
+      <input type="file" id="geo-import-input" accept=".geojson,.json,.kml,.kmz,.gpx" multiple="" hidden="" aria-label="Choose GeoJSON, KML, KMZ or GPX files" data-i18n-aria-label="">
+      <ul class="geo-import-list" id="geo-import-list" aria-label="Imported files" data-i18n-aria-label=""></ul>
+      <span class="draw-hint geo-import-hint" id="geo-import-hint" aria-live="polite"></span>
+    </div>
+    <div class="pp-toggle-group">
+      <button class="pp-toggle-btn" id="celestial-toggle" title="Celestial ring — reveal the full globe" aria-pressed="false" data-i18n-title="" aria-disabled="false">
+        <span class="pp-icon material-symbols-outlined" aria-hidden="true">flare</span>
+        <span class="pp-label" data-i18n="">Celestial</span>
+      </button>
+    </div>
+    <button class="pp-toggle-btn" id="clean-view-toggle" title="Hide UI chrome" data-i18n-title="">
+      <span class="pp-icon">□</span>
+      <span class="pp-label" data-i18n="">Clean UI</span>
+    </button>
+    <div class="pp-toggle-group">
+      <button class="pp-toggle-btn" id="bloom-toggle" title="Bloom / Glow" data-i18n-title="">
+        <span class="pp-icon">✨</span>
+        <span class="pp-label" data-i18n="">Bloom</span>
+      </button>
+      <div class="pp-slider-row" id="bloom-slider-row">
+        <input type="range" class="pp-slider" id="bloom-intensity-slider" min="0" max="200" value="0" aria-label="Bloom intensity" data-i18n-aria-label="">
+        <span class="pp-slider-value" id="bloom-intensity-value">0%</span>
+      </div>
+    </div>
+    <div class="pp-toggle-group">
+      <button class="pp-toggle-btn active" id="sharpen-toggle" title="Sharpening" data-i18n-title="">
+        <span class="pp-icon">🔍</span>
+        <span class="pp-label" data-i18n="">Sharpen</span>
+      </button>
+      <div class="pp-slider-row visible" id="sharpen-slider-row">
+        <input type="range" class="pp-slider" id="sharpen-intensity-slider" min="0" max="100" value="49" aria-label="Sharpen intensity" data-i18n-aria-label="">
+        <span class="pp-slider-value" id="sharpen-intensity-value">49%</span>
+      </div>
+    </div>
+  </div>
+  </div>
+    
+    
+    <div id="cctv-panel" class="panel-collapsible collapsed panel-portable" data-panel-id="cctv-panel" data-collapsed-preference="default">
+    <div class="panel-glow"></div>
+    <div class="cctv-panel-inner" data-rail-scroller="">
+      <div class="panel-header">
+        <span class="panel-title" data-i18n="">CCTV</span>
+        <span class="panel-divider"></span>
+        <button class="panel-collapse-btn" data-collapse-target="cctv-panel" title="Expand CCTV" data-i18n-title="" aria-expanded="false" aria-label="Expand CCTV">◀</button>
+      </div>
+      <div class="cyber-panel-body" data-rail-scroller="">
+      <div id="cctv-frame-wrap" class="cctv-frame-wrap">
+        <span class="cctv-frame-caption" aria-hidden="true" data-i18n="">ACQUIRING FRAME</span>
+        <img id="cctv-frame" alt="CCTV feed frame" data-camera-id="" data-current-src="" data-loading="" data-error="">
+        <canvas id="cctv-video" class="cctv-frame" hidden=""></canvas>
+      </div>
+      <div id="cctv-source-badge" role="status" aria-live="polite" data-i18n="" data-frame-state="idle">SOURCE · UNKNOWN</div>
+      <div id="cctv-meta" data-i18n="">Enable CCTV to load camera intersections</div>
+      <div class="cctv-controls">
+        <button id="cctv-enable-btn" class="scene-btn" data-i18n="">CCTV OFF</button>
+        <button id="cctv-nearest-btn" class="scene-btn" data-i18n="" disabled="">NEAREST</button>
+      </div>
+      <div class="cctv-controls">
+        <button id="cctv-prev-btn" class="scene-btn" data-i18n="" disabled="">PREV</button>
+        <select id="cctv-camera-select" aria-label="CCTV camera" data-i18n-aria-label="" disabled=""></select>
+        <button id="cctv-next-btn" class="scene-btn" data-i18n="" disabled="">NEXT</button>
+      </div>
+      <div class="cctv-controls">
+        <button id="cctv-focus-btn" class="scene-btn" data-i18n="" disabled="">FOCUS</button>
+        <button id="cctv-coverage-btn" class="scene-btn active" data-i18n="" disabled="">COVERAGE ON</button>
+        <button id="cctv-auto-hop-btn" class="scene-btn" data-i18n="" disabled="">AUTO HOP OFF</button>
+      </div>
+      <div class="cctv-controls">
+        <button id="cctv-projection-btn" class="scene-btn active" data-i18n="" disabled="">PROJECTION ON</button>
+        <span id="cctv-quality-chip" data-i18n-runtime="" data-cal-badge="">CAL · --</span>
+      </div>
+      <div class="cctv-calibration-block">
+        <div class="cctv-calibration-header">
+          <div class="cctv-summary-label" data-i18n="">CALIBRATION</div>
+          <button id="cctv-adjust-btn" class="scene-btn" title="Drag the camera in the world: rings rotate, arrows move, handles set range/FOV" data-i18n-title="" data-i18n="" disabled="">ADJUST</button>
+        </div>
+        <div id="cctv-cal-readout" class="cctv-cal-readout" aria-label="Camera pose — click a value to type" data-i18n-aria-label="">
+          <button class="cctv-cal-value" data-cal-field="heading" title="Heading (compass °) — click to type" data-i18n-title="" data-i18n-runtime="" disabled="">HDG --</button>
+          <button class="cctv-cal-value" data-cal-field="pitch" title="Pitch (° up/down) — click to type" data-i18n-title="" data-i18n-runtime="" disabled="">PITCH --</button>
+          <button class="cctv-cal-value" data-cal-field="fov" title="Horizontal FOV (°) — click to type" data-i18n-title="" data-i18n-runtime="" disabled="">FOV --</button>
+          <button class="cctv-cal-value" data-cal-field="range" title="Range / monitor-plane distance (m) — click to type" data-i18n-title="" data-i18n-runtime="" disabled="">RANGE --</button>
+          <button class="cctv-cal-value" data-cal-field="height" title="Mount height above ground (m) — click to type" data-i18n-title="" data-i18n-runtime="" disabled="">HGT --</button>
+          <button class="cctv-cal-value" data-cal-field="north" title="North offset from catalog position (m) — click to type" data-i18n-title="" disabled="">ΔN --</button>
+          <button class="cctv-cal-value" data-cal-field="east" title="East offset from catalog position (m) — click to type" data-i18n-title="" disabled="">ΔE --</button>
+        </div>
+        <div class="cctv-controls cctv-calibration-actions">
+          <button id="cctv-calib-save-btn" class="scene-btn" data-i18n="" disabled="">SAVE CAL</button>
+          <button id="cctv-calib-reset-btn" class="scene-btn" data-i18n="" disabled="">RESET CAL</button>
+        </div>
+      </div>
+      <div class="cctv-summary-label" data-i18n="">SCENE SUMMARY</div>
+      <div id="cctv-summary" data-i18n="">No cameras available in catalog.</div>
+      </div>
+    </div>
+  <div class="panel-resize-edge" data-dir="n" aria-hidden="true"></div><div class="panel-resize-edge" data-dir="s" aria-hidden="true"></div><div class="panel-resize-edge" data-dir="e" aria-hidden="true"></div><div class="panel-resize-edge" data-dir="w" aria-hidden="true"></div><div class="panel-resize-edge" data-dir="ne" aria-hidden="true"></div><div class="panel-resize-edge" data-dir="nw" aria-hidden="true"></div><div class="panel-resize-edge" data-dir="sw" aria-hidden="true"></div><div class="panel-resize-grip" data-dir="se" aria-hidden="true" title="Drag to resize · double-click the header to snap back"></div></div><div id="weather-panel" class="panel-collapsible" data-panel-id="weather-panel" hidden="" data-collapsed-preference="default">
+      <div class="panel-glow"></div>
+      <div class="weather-panel-inner" data-rail-scroller="">
+        <div class="panel-header">
+          <span class="panel-title" data-i18n="">WEATHER</span>
+          <span id="weather-panel-count" aria-label="Active weather products" data-i18n-aria-label="">0</span>
+          <span class="panel-divider"></span>
+          <button class="panel-collapse-btn" data-collapse-target="weather-panel" type="button" title="Collapse WEATHER" data-i18n-title="" aria-expanded="true" aria-label="Collapse WEATHER">▶</button>
+        </div>
+        <div id="weather-panel-body" data-rail-scroller=""><section class="weather-readout" hidden="" aria-label="Active weather"><div class="weather-cards"></div><section class="weather-observed-group" aria-label="Observed history" hidden=""><h3 class="panel-title">Observed history</h3><div class="weather-observed-scope"></div><div class="weather-timeline-block" hidden=""><section class="rail-timeline"><div class="rail-timeline-track"><button type="button" class="data-toggle-chip" title="Earlier observation" disabled="">‹</button><input type="range" class="gev-quantitative-slider weather-timeline" min="0" max="0" step="1" aria-label="Observed history" aria-valuetext="" disabled=""><button type="button" class="data-toggle-chip" title="Later observation" disabled="">›</button><div class="rail-timeline-endpoints"><span></span><span></span></div></div><div class="rail-timeline-controls"><button type="button" class="data-toggle-chip active" title="Newest frame per product" disabled="" aria-pressed="true">Latest</button><button type="button" class="data-toggle-chip" title="Replay observed history" disabled="" aria-pressed="false">Play</button><span class="rail-timeline-readout">LATEST · newest per product</span></div></section></div><div class="weather-cards"></div></section></section></div>
+      </div>
+    </div><div id="recent-imagery-panel" class="panel-collapsible" data-panel-id="recent-imagery-panel" hidden="" data-collapsed-preference="default">
+      <div class="panel-glow"></div>
+      <div class="recent-imagery-panel-inner" data-rail-scroller="">
+        <div class="panel-header">
+          <span class="panel-title" data-i18n="">RECENT IMAGERY</span>
+          <span id="recent-imagery-panel-count" aria-label="Imagery days in the box" data-i18n-aria-label=""></span>
+          <span class="panel-divider"></span>
+          <button class="panel-collapse-btn" data-collapse-target="recent-imagery-panel" type="button" title="Collapse RECENT IMAGERY" data-i18n-title="" aria-expanded="true" aria-label="Collapse RECENT IMAGERY">▶</button>
+        </div>
+        <div id="recent-imagery-panel-body" data-rail-scroller=""><section class="recent-imagery-readout" aria-label="Recent imagery" data-mode="image" hidden=""><div class="ri-block ri-actions-row" id="ri-actions"><footer class="rail-card-actions" data-block-id="box"><button class="data-toggle-chip" data-action-id="select-box" type="button" title="Drag a box on the map (Esc cancels)" aria-pressed="false">SELECT BOX</button><span class="rail-card-action-hint" hidden=""></span><button class="data-toggle-chip" data-action-id="use-view" type="button" title="Use the current view as the box">USE VIEW</button><span class="rail-card-action-hint" hidden=""></span><button class="data-toggle-chip" data-action-id="clear" type="button" title="Forget the box and its images" disabled="">CLEAR</button><span class="rail-card-action-hint" hidden=""></span></footer></div><div class="ri-block ri-line ri-notice" id="ri-notice"><span class="ri-notice-text" id="ri-notice-text" role="status" aria-live="polite" title=""></span><button class="data-toggle-chip ri-zoom-in is-reserved" id="ri-zoom-in" type="button" title="Fly in until the view fits the 1,000 km limit" disabled="" aria-hidden="true">ZOOM IN</button></div><div class="ri-block ri-strip" id="ri-strip" tabindex="0" role="listbox" aria-orientation="horizontal" aria-label="Imagery days, newest first · arrows move, S or A and B pin" aria-keyshortcuts="A B S"><div class="ri-strip-empty">No box</div></div><div class="ri-block ri-line ri-hint" id="ri-hint" title="Select a box or use the view">Select a box or use the view</div><section class="ri-block ri-selection" id="ri-selection" aria-label="On the map" data-mode="image"><div class="ri-mode" id="ri-mode" role="radiogroup" aria-label="Mode"><button class="data-toggle-chip ri-mode-btn active" type="button" data-mode="image" role="radio" aria-checked="true">IMAGE</button><button class="data-toggle-chip ri-mode-btn" type="button" data-mode="basemap" role="radio" aria-checked="false" tabindex="-1">VS BASEMAP</button><button class="data-toggle-chip ri-mode-btn" type="button" data-mode="ab" role="radio" aria-checked="false" tabindex="-1">A / B</button></div><div class="ri-slot" id="ri-slot-a" data-state="empty"><span class="ri-slot-tag">IMAGE</span><span class="ri-slot-value" title="Not set">Not set</span><button class="data-toggle-chip ri-unpin is-reserved" type="button" id="ri-unpin-a" data-unpin="a" disabled="" aria-hidden="true" aria-label="Unpin the image" title="Unpin the image">×</button></div><div class="ri-slot" id="ri-slot-b" data-state="empty"><span class="ri-slot-tag">VS</span><span class="ri-slot-value" title="Basemap">Basemap</span><button class="data-toggle-chip ri-unpin is-reserved" type="button" id="ri-unpin-b" data-unpin="b" disabled="" aria-hidden="true" aria-label="Unpin the image" title="Unpin the image">×</button></div></section><div class="ri-block ri-controls" id="ri-controls"><label class="ri-opacity-label" for="ri-opacity"><span>OPACITY</span><span class="ri-opacity-value">100%</span></label><input class="ri-opacity" id="ri-opacity" type="range" min="0" max="100" step="1" aria-label="Imagery opacity" disabled=""><button class="data-toggle-chip ri-swap is-reserved" id="ri-swap" type="button" title="Trade the two sides of the divider" disabled="" aria-hidden="true" aria-pressed="false">SWAP</button><div class="ri-exports"><footer class="rail-card-actions" data-block-id="export"><button class="data-toggle-chip" data-action-id="export-a" type="button" title="Download the image as a PNG" disabled="">EXPORT</button><span class="rail-card-action-hint" hidden=""></span><button class="data-toggle-chip is-reserved" data-action-id="export-b" type="button" title="Download the image as a PNG" disabled="" aria-hidden="true">EXPORT</button><span class="rail-card-action-hint" hidden=""></span></footer></div></div><div class="ri-details" id="ri-details"><article class="rail-card ri-details-card" data-card-id="details" data-open="false"><button class="rail-card-header" type="button" aria-controls="rail-card-body-1" aria-expanded="false"><span class="rail-card-labels"><span class="rail-card-heading"><span class="data-icon" aria-hidden="true" hidden=""></span><span class="rail-card-title rail-card-nowrap" title="Details">Details</span></span><span class="rail-card-badge" hidden=""></span></span><span class="rail-card-disclosure" aria-hidden="true">▸</span><span class="rail-card-compact">Times, coverage, sources</span></button><div class="rail-card-body" id="rail-card-body-1" hidden=""><div class="rail-card-lines" data-block-id="lines"><div class="rail-card-line muted" data-line-id="credit">Imagery: NASA GIBS and Worldview · HLS (Sentinel-2, Landsat 8/9) and VIIRS</div></div><footer class="rail-card-actions" data-block-id="empty-days"><button class="data-toggle-chip" data-action-id="toggle-empty" type="button" title="Days the probe found empty in this box" disabled="">SHOW EMPTY DAYS · 0</button><span class="rail-card-action-hint" hidden=""></span></footer></div></article></div></section></div>
+      </div>
+    </div><div id="street-level-panel" class="panel-collapsible collapsed panel-portable" data-panel-id="street-level-panel" data-collapsed-preference="default" data-sl-enabled="false">
+    <div class="panel-glow"></div>
+    <div class="street-level-panel-inner" data-rail-scroller="">
+      <div class="panel-header">
+        <span class="panel-title" data-i18n="">STREET LEVEL</span>
+        <span class="panel-divider"></span>
+        <button id="sl-status" class="sl-status" type="button" aria-pressed="false" title="Turn Street Level on" data-i18n-title="" data-i18n="">OFF</button>
+        <button class="panel-collapse-btn" data-collapse-target="street-level-panel" title="Expand STREET LEVEL" data-i18n-title="" aria-expanded="false" aria-label="Expand STREET LEVEL">◀</button>
+      </div>
+      <div id="sl-body" class="sl-body">
+        <div class="sl-main">
+          <div id="sl-viewer-wrap" class="sl-viewer-wrap" hidden="">
+            <div class="sl-viewer-bar">
+              <div class="sl-viewer-tools">
+                <button id="sl-viewer-expand" class="scene-btn" type="button" aria-pressed="false" title="Expand the street-level view (Esc shrinks it)" data-i18n-title=""><span class="sl-btn-icon" aria-hidden="true">⤢</span><span class="sl-btn-text" data-i18n="">EXPAND</span></button>
+                <div class="sl-seg" role="radiogroup" aria-label="Image fit" data-i18n-aria-label="">
+                  <button type="button" class="sl-seg-btn is-active" data-sl-render="letterbox" role="radio" aria-checked="true" title="Fit: show the whole photo, with dark bars where its shape differs from the frame" data-i18n-title="" data-i18n="" tabindex="0">FIT</button>
+                  <button type="button" class="sl-seg-btn" data-sl-render="fill" role="radio" aria-checked="false" tabindex="-1" title="Fill: fill the frame edge to edge, cropping the photo" data-i18n-title="" data-i18n="">FILL</button>
+                </div>
+                <button id="sl-follow-btn" class="scene-btn" type="button" aria-pressed="false" aria-label="Camera follows view" title="Camera follow needs the Google 3D map: choose Google 3D under MAP SOURCE" data-i18n-aria-label="" data-i18n-title="" disabled=""><span class="sl-btn-icon" aria-hidden="true">⌖</span><span class="sl-btn-text" data-i18n="">FOLLOW</span></button>
+              </div>
+              <div class="sl-viewer-tools sl-viewer-tools-right">
+                <button id="sl-viewer-close" class="sl-viewer-x" type="button" title="Close the image and deselect it on the map" aria-label="Close the street-level image" data-i18n-title="" data-i18n-aria-label="">×</button>
+              </div>
+            </div>
+            <div class="sl-viewer-stage">
+              <div id="sl-viewer-placeholder" class="sl-viewer-placeholder" hidden=""></div>
+              <div id="sl-viewer" class="sl-viewer" aria-label="Street-level viewer" data-i18n-aria-label=""></div>
+            </div>
+            <div id="sl-image-meta" class="sl-image-meta">
+              <span id="sl-image-by" class="sl-image-by"></span>
+              <span class="sl-image-right">
+                <span id="sl-image-when" class="sl-image-when"></span>
+                <a id="sl-image-link" class="sl-image-link" href="https://nmstudio-gods-eye-view.vercel.app/#" target="_blank" rel="noopener noreferrer" title="Open this image on the provider&#39;s site" data-i18n-title="" hidden=""></a>
+              </span>
+            </div>
+          </div>
+          <div class="sl-settings">
+            <div class="sl-providers" role="group" aria-label="Imagery providers" data-i18n-aria-label="">
+              <span class="cctv-summary-label" data-i18n="">PROVIDERS</span>
+              <div id="sl-provider-chips" class="sl-chips"><button type="button" data-chip-id="mapillary" class="data-toggle-chip chip-idle" data-chip-color="#05cb63" title="Mapillary imagery off" aria-pressed="false" aria-busy="false" style="--chip-color: #05cb63;">MAPILLARY</button><button type="button" data-chip-id="kartaview" class="data-toggle-chip chip-idle" data-chip-color="#635bff" title="KartaView imagery off" aria-pressed="false" aria-busy="false" style="--chip-color: #635bff;">KARTAVIEW</button><button type="button" data-chip-id="panoramax" class="data-toggle-chip chip-idle" data-chip-color="#ff6f00" title="Panoramax imagery off" aria-pressed="false" aria-busy="false" style="--chip-color: #ff6f00;">PANORAMAX</button></div>
+            </div>
+            <div id="sl-error" class="sl-error" role="alert" hidden=""><span aria-hidden="true">⚠</span> <span id="sl-error-text"></span></div>
+            <!-- A missing key gates the filters only: the chips above stay
+                 focusable so their tooltip can say how to add the key. -->
+            <fieldset id="sl-controls" class="sl-controls">
+              <div id="sl-pano-row" class="sl-filters" role="group" aria-label="Imagery filters" data-i18n-aria-label="">
+                <span class="cctv-summary-label" data-i18n="">IMAGERY</span>
+                <div class="sl-seg" role="radiogroup" aria-label="Panorama filter" data-i18n-aria-label="">
+                  <button type="button" class="sl-seg-btn is-active" data-sl-pano="all" role="radio" aria-checked="true" data-i18n="" tabindex="0">ALL</button>
+                  <button type="button" class="sl-seg-btn" data-sl-pano="pano" role="radio" aria-checked="false" tabindex="-1">360°</button>
+                  <button type="button" class="sl-seg-btn" data-sl-pano="flat" role="radio" aria-checked="false" tabindex="-1" data-i18n="">FLAT</button>
+                </div>
+              </div>
+              <div id="sl-since-row" class="sl-since">
+                <label class="cctv-summary-label" for="sl-since" data-i18n="">SINCE</label>
+                <input id="sl-since" class="sl-range" type="range" min="0" max="8" step="1" value="0" aria-valuetext="ANY DATE" aria-describedby="sl-since-label sl-since-note">
+                <output id="sl-since-label" class="sl-since-label" for="sl-since" data-i18n="">ANY DATE</output>
+                <small id="sl-since-note" class="sl-since-note" hidden=""></small>
+              </div>
+            </fieldset>
+            <ul id="sl-legend" class="sl-legend" aria-label="Coverage colours" data-i18n-aria-label=""><li><i class="sl-legend-swatch" style="background: rgb(5, 203, 99);"></i><span>Mapillary</span></li><li><i class="sl-legend-swatch" style="background: rgb(0, 212, 255);"></i><span>Selected</span></li></ul>
+            <!-- The hint says how to open imagery; the button does it without a pointer. -->
+            <div class="sl-meta-row">
+              <div id="sl-coverage-meta" class="sl-meta">Switch a provider on to draw its coverage.</div>
+              <button id="sl-nearest-btn" class="scene-btn sl-nearest-btn" type="button" hidden="" data-i18n-runtime="">OPEN STREET VIEW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="panel-resize-edge" data-dir="n" aria-hidden="true"></div><div class="panel-resize-edge" data-dir="s" aria-hidden="true"></div><div class="panel-resize-edge" data-dir="e" aria-hidden="true"></div><div class="panel-resize-edge" data-dir="w" aria-hidden="true"></div><div class="panel-resize-edge" data-dir="ne" aria-hidden="true"></div><div class="panel-resize-edge" data-dir="nw" aria-hidden="true"></div><div class="panel-resize-edge" data-dir="sw" aria-hidden="true"></div><div class="panel-resize-grip" data-dir="se" aria-hidden="true" title="Drag to resize · double-click the header to snap back"></div></div><div id="global-context-panel" class="panel-collapsible collapsed" data-panel-id="global-context-panel" data-collapsed-preference="default" data-context-mode="none">
+      <div class="panel-glow"></div>
+      <div class="global-context-panel-inner" data-rail-scroller="">
+        <div class="panel-header">
+          <span class="panel-title" data-i18n="">CONTEXT</span>
+          <span class="panel-divider"></span>
+          <div id="context-radio-dock" class="context-radio-dock">
+            <button id="context-radio-toggle-btn" class="context-radio-toggle" type="button" aria-expanded="false" aria-controls="context-radio-mini" aria-label="Open compact Radio controls" title="Open compact Radio controls" data-i18n-aria-label="" data-i18n-title="">
+              <span class="material-symbols-outlined" aria-hidden="true">radio</span>
+            </button>
+            <div id="context-radio-mini" class="context-radio-mini" role="group" aria-label="Compact Radio controls" hidden="" data-i18n-aria-label="">
+              <div class="context-radio-mini-heading">
+                <span data-i18n="">RADIO</span>
+                <strong id="context-radio-mini-station" data-i18n="">RADIO READY</strong>
+                <span class="context-radio-mini-actions">
+                  <button id="context-radio-details-btn" type="button" aria-label="Open detailed Radio controls" aria-expanded="false" aria-controls="radio-panel" title="Open detailed Radio controls" data-i18n-aria-label="" data-i18n-title="">
+                    <span class="material-symbols-outlined" aria-hidden="true">open_in_full</span>
+                  </button>
+                  <button id="context-radio-mini-close-btn" type="button" aria-label="Close compact Radio controls" title="Close compact Radio controls" data-i18n-aria-label="" data-i18n-title="">
+                    <span class="material-symbols-outlined" aria-hidden="true">close</span>
+                  </button>
+                </span>
+              </div>
+              <button id="context-radio-mini-enable-btn" class="panel-layer-toggle" type="button" aria-pressed="false" data-i18n="" aria-label="Enable Radio" aria-disabled="false" aria-busy="false">ENABLE</button>
+              <div class="context-radio-mini-transport">
+                <button id="context-radio-mini-prev-btn" type="button" aria-label="Previous filtered radio station" title="Previous station" disabled="" data-i18n-aria-label="" data-i18n-title="">◀◀</button>
+                <button id="context-radio-mini-play-btn" type="button" aria-label="Play nearest radio station" title="Play" disabled="" data-i18n-aria-label="" data-i18n-title="">▶</button>
+                <button id="context-radio-mini-next-btn" type="button" aria-label="Next filtered radio station" title="Next station" disabled="" data-i18n-aria-label="" data-i18n-title="">▶▶</button>
+              </div>
+              <label class="context-radio-mini-volume" for="context-radio-mini-volume">
+                <span data-i18n="">VOLUME</span>
+                <input id="context-radio-mini-volume" class="gev-quantitative-slider" type="range" min="0" max="100" value="80" aria-label="Compact Radio volume" disabled="" data-i18n-aria-label="">
+                <output id="context-radio-mini-volume-value" class="gev-slider-value" for="context-radio-mini-volume">80%</output>
+              </label>
+            </div>
+          </div>
+          <button class="panel-collapse-btn" data-collapse-target="global-context-panel" title="Expand CONTEXT" data-i18n-title="" aria-expanded="false" aria-label="Expand CONTEXT">◀</button>
+        </div>
+        <div class="cyber-panel-body" data-rail-scroller="">
+        <div class="global-context-modes" role="tablist" aria-label="Context mode" data-i18n-aria-label="">
+          <button id="global-context-flights-btn" class="context-mode-button" type="button" role="tab" tabindex="0" aria-selected="false" aria-controls="context-flights-view" aria-label="CONTACTS" title="Cycles the nearest contacts of whatever type you select — planes, vessels, installations. Satellites track independently." data-i18n-aria-label="" data-i18n-title="" aria-disabled="false" aria-busy="false">
+            <span class="material-symbols-outlined" aria-hidden="true">radar</span>
+            <span data-i18n="">CONTACTS</span>
+          </button>
+          <button id="global-context-missions-btn" class="context-mode-button" type="button" role="tab" tabindex="0" aria-selected="false" aria-controls="context-missions-view" aria-disabled="false" aria-busy="false">
+            <span class="material-symbols-outlined" aria-hidden="true">rocket_launch</span>
+            <span data-i18n="">SPACE MISSIONS</span>
+          </button>
+        </div>
+        <div id="context-mode-standby" class="context-mode-standby">
+          <strong data-i18n="">SELECT CONTEXT</strong>
+          <span data-i18n-runtime="">CONTACTS — nearest planes · vessels · sites<br>SPACE MISSIONS — launches &amp; orbital assets</span>
+        </div>
+        <section id="context-flights-view" class="context-mode-view" role="tabpanel" aria-labelledby="global-context-flights-btn" hidden="">
+          <div class="global-context-actions" aria-label="Contact Context actions" data-i18n-aria-label="">
+            <button id="cockpit-entry" type="button" hidden="">
+              <span class="material-symbols-outlined" aria-hidden="true">flight</span>
+              <span data-i18n="">COCKPIT</span>
+            </button>
+            <button id="installations-search-btn" class="panel-layer-toggle" type="button" data-i18n="">SEARCH NEARBY SITES</button>
+            <button id="tr3b-toggle" class="tr3b-toggle" type="button" aria-pressed="false" hidden="" aria-label="Reclassify tracked contact as TR-3B" title="Reclassify as TR-3B" data-i18n-aria-label="" data-i18n-title="">🛸</button>
+          </div>
+          <aside id="military-awareness-panel">
+            <div class="military-awareness-standby">
+              <strong data-i18n="">CONTACTS CONTEXT OFF</strong>
+              <span data-i18n="">SELECT CONTACTS TO LOAD OBSERVED / MAPPED PROXIMITY</span>
+            </div>
+          </aside>
+        </section>
+        <section id="context-missions-view" class="context-mode-view" role="tabpanel" aria-labelledby="global-context-missions-btn" hidden="">
+          <div id="space-mission-panel-host">
+            <div id="space-mission-roster" class="space-mission-roster" aria-label="Available Space Missions" data-i18n-aria-label="">
+              <div class="space-mission-roster-header">
+                <div>
+                  <strong data-i18n="">AVAILABLE MISSIONS</strong>
+                  <span data-i18n="">SELECT A MISSION TO INSPECT</span>
+                </div>
+                <output data-mission-roster-count="">—</output>
+              </div>
+              <div class="space-mission-roster-list" data-mission-roster-list="">
+                <div class="space-mission-roster-empty" data-i18n="">LOADING 30-DAY MISSION INDEX</div>
+              </div>
+              <p class="space-mission-roster-focus-continuation" tabindex="-1" data-mission-roster-focus-continuation="" data-i18n="">TAB PREVIEWS · ENTER / SPACE SELECTS</p>
+            </div>
+          </div>
+        </section>
+        <section id="radio-panel" class="panel-collapsible collapsed" data-panel-id="radio-panel" aria-label="Internet radio and local SDR" data-i18n-aria-label="" data-collapsed-preference="default">
+          <div class="radio-panel-inner">
+            <div class="panel-header">
+              <span class="panel-title" data-i18n="">RADIO</span>
+              <span id="radio-layer-state" class="radio-layer-state" data-i18n="">OFF</span>
+              <span class="panel-divider"></span>
+              <button class="panel-collapse-btn" data-collapse-target="radio-panel" title="Expand Radio" aria-label="Expand Radio section" data-i18n-title="" data-i18n-aria-label="" aria-expanded="false">+</button>
+            </div>
+            <div class="radio-directory-row">
+              <button id="radio-enable-btn" class="panel-layer-toggle" type="button" aria-pressed="false" data-i18n="" aria-label="Enable Radio" aria-disabled="false" aria-busy="false">ENABLE</button>
+              <label class="radio-filter-label" for="radio-filter" data-i18n="">STATION TAG</label>
+              <select id="radio-filter" aria-label="Filter stations by station tag" disabled="" data-i18n-aria-label="">
+                <option value="all" data-i18n="">All</option>
+              </select>
+            </div>
+            <div id="radio-station-card" class="radio-station-card" aria-live="polite">
+              <strong id="radio-station-name" data-i18n="">NO STATION SELECTED</strong>
+              <span id="radio-station-meta" data-i18n="">Choose a globe marker or use next.</span>
+              <span id="radio-station-tags"></span>
+            </div>
+            <div id="radio-tuner" class="radio-tuner" hidden="">
+              <div class="radio-tuner-header">
+                <span data-i18n="" id="radio-tuner-band-label">DIRECTORY BAND</span>
+                <output id="radio-tuner-value" for="radio-tuner-slider" data-i18n="">DRAG TO TUNE</output>
+              </div>
+              <div class="radio-tuner-dial">
+                <div class="radio-tuner-scale" aria-hidden="true"></div>
+                <div id="radio-tuner-needle" class="radio-tuner-needle" aria-hidden="true"></div>
+                <input id="radio-tuner-slider" type="range" min="0" max="0" step="1" value="0" aria-label="Tune available internet radio stations" aria-valuetext="No station available" disabled="" data-i18n-aria-label="">
+              </div>
+              <div class="radio-tuner-readout">
+                <span id="radio-tuner-station" data-i18n="">ALL · DRAG THE NEEDLE</span>
+                <span data-i18n="">SNAPS TO AVAILABLE STATIONS</span>
+              </div>
+            </div>
+            <div class="radio-transport" role="group" aria-label="Radio playback" data-i18n-aria-label="">
+              <button id="radio-prev-btn" type="button" aria-label="Previous filtered station" disabled="" data-i18n-aria-label="" data-i18n="">PREV</button>
+              <button id="radio-play-btn" type="button" aria-label="Play nearest radio station" disabled="" data-i18n-aria-label="" data-i18n="">PLAY</button>
+              <button id="radio-next-btn" type="button" aria-label="Next filtered station" disabled="" data-i18n-aria-label="" data-i18n="">NEXT</button>
+              <button id="radio-stop-btn" type="button" aria-label="Stop radio playback" disabled="" data-i18n-aria-label="" data-i18n="">STOP</button>
+            </div>
+            <label class="radio-volume-row" for="radio-volume">
+              <span data-i18n="">VOLUME</span>
+              <input id="radio-volume" class="gev-quantitative-slider" type="range" min="0" max="100" value="80" aria-label="Radio volume" data-i18n-aria-label="" disabled="">
+              <output id="radio-volume-value" class="gev-slider-value" for="radio-volume">80%</output>
+            </label>
+            <div id="radio-playback-state" class="radio-playback-state" role="status" aria-live="polite" data-i18n="">Radio off</div>
+            <div class="radio-links">
+              <a id="radio-station-homepage" target="_blank" rel="noopener noreferrer" hidden="" data-i18n="">STATION SITE</a>
+              <a href="https://www.radio-browser.info/" target="_blank" rel="noopener noreferrer" data-i18n="">DIRECTORY: RADIO BROWSER</a>
+            </div>
+            <p class="radio-privacy" data-i18n="">Audio connects directly to the broadcaster after you press play. Your IP is visible to that broadcaster.</p>
+            <div id="sdr-radio-card" class="sdr-radio-card" role="group" aria-label="Local RTL-SDR receiver" data-i18n-aria-label="">
+              <div class="sdr-radio-heading">
+                <strong data-i18n="">LOCAL RTL-SDR</strong>
+                <span id="sdr-connection-state" data-i18n-runtime="">IDLE</span>
+              </div>
+              <p data-i18n="">Chrome/Edge · WebUSB · one local tuner shared by FM and the Local ADS-B layer.</p>
+              <div class="sdr-radio-actions">
+                <button id="sdr-connect-btn" class="panel-layer-toggle" type="button" aria-pressed="false" data-i18n="">CONNECT</button>
+                <button id="sdr-locate-btn" type="button" title="Use your location for faster ADS-B position decoding" data-i18n-title="" data-i18n="">LOCATE</button>
+                <button id="sdr-change-device-btn" type="button" title="Choose a different RTL-SDR or receiver channel" data-i18n-title="" data-i18n="">CHANGE DEVICE</button>
+              </div>
+              <div class="sdr-mode-row" role="group" aria-label="RTL-SDR receiver mode" data-i18n-aria-label="">
+                <button id="sdr-mode-fm-btn" class="active" type="button" aria-pressed="true" translate="no">FM</button>
+                <button id="sdr-mode-adsb-btn" type="button" aria-pressed="false" translate="no">ADS-B · 1090</button>
+              </div>
+              <div class="sdr-gain-row">
+                <label for="sdr-gain-select" data-i18n="">GAIN</label>
+                <select id="sdr-gain-select" aria-label="RTL-SDR tuner gain for the current mode" data-i18n-aria-label="">
+                  <option value="auto" data-i18n="">AUTO</option>
+                  <option value="0.0" translate="no">0.0&nbsp;dB</option>
+                  <option value="0.9" translate="no">0.9&nbsp;dB</option>
+                  <option value="1.4" translate="no">1.4&nbsp;dB</option>
+                  <option value="2.7" translate="no">2.7&nbsp;dB</option>
+                  <option value="3.7" translate="no">3.7&nbsp;dB</option>
+                  <option value="7.7" translate="no">7.7&nbsp;dB</option>
+                  <option value="8.7" translate="no">8.7&nbsp;dB</option>
+                  <option value="12.5" translate="no">12.5&nbsp;dB</option>
+                  <option value="14.4" translate="no">14.4&nbsp;dB</option>
+                  <option value="15.7" translate="no">15.7&nbsp;dB</option>
+                  <option value="16.6" translate="no">16.6&nbsp;dB</option>
+                  <option value="19.7" translate="no">19.7&nbsp;dB</option>
+                  <option value="20.7" translate="no">20.7&nbsp;dB</option>
+                  <option value="22.9" translate="no">22.9&nbsp;dB</option>
+                  <option value="25.4" translate="no">25.4&nbsp;dB</option>
+                  <option value="28.0" translate="no">28.0&nbsp;dB</option>
+                  <option value="29.7" translate="no">29.7&nbsp;dB</option>
+                  <option value="32.8" translate="no">32.8&nbsp;dB</option>
+                  <option value="33.8" translate="no">33.8&nbsp;dB</option>
+                  <option value="36.4" translate="no">36.4&nbsp;dB</option>
+                  <option value="37.2" translate="no">37.2&nbsp;dB</option>
+                  <option value="38.6" translate="no">38.6&nbsp;dB</option>
+                  <option value="40.2" translate="no">40.2&nbsp;dB</option>
+                  <option value="42.1" translate="no">42.1&nbsp;dB</option>
+                  <option value="43.4" translate="no">43.4&nbsp;dB</option>
+                  <option value="43.9" translate="no">43.9&nbsp;dB</option>
+                  <option value="44.5" translate="no">44.5&nbsp;dB</option>
+                  <option value="48.0" translate="no">48.0&nbsp;dB</option>
+                  <option value="49.6" translate="no">49.6&nbsp;dB</option>
+                </select>
+              </div>
+              <div id="sdr-adsb-stats" class="sdr-adsb-stats" role="status" aria-live="off" hidden="">
+                <span><output id="sdr-stat-rate">--</output> <span data-i18n="">MSG/S</span></span>
+                <span><output id="sdr-stat-heard">0</output> <span data-i18n="">HEARD</span></span>
+                <span><output id="sdr-stat-positioned">0</output> <span data-i18n="">POSITIONED</span></span>
+                <span translate="no">IQ <output id="sdr-stat-iq">--</output></span>
+              </div>
+              <div class="sdr-frequency-row">
+                <label for="sdr-frequency-input" data-i18n="">FM MHZ</label>
+                <input id="sdr-frequency-input" type="number" min="87.5" max="108" step="0.1" value="98.5" inputmode="decimal">
+                <button id="sdr-tune-btn" type="button" data-i18n="" disabled="">TUNE</button>
+              </div>
+              <div class="sdr-seek-row" role="group" aria-label="Seek broadcast FM stations" data-i18n-aria-label="">
+                <button id="sdr-seek-back-btn" type="button" disabled="" data-i18n="">◀ SEEK</button>
+                <button id="sdr-seek-forward-btn" type="button" disabled="" data-i18n="">SEEK ▶</button>
+              </div>
+              <label class="radio-volume-row" for="sdr-volume">
+                <span data-i18n="">SDR VOL</span>
+                <input id="sdr-volume" class="gev-quantitative-slider" type="range" min="0" max="100" value="80" aria-label="Local SDR volume" data-i18n-aria-label="">
+                <output id="sdr-volume-value" class="gev-slider-value" for="sdr-volume">80%</output>
+              </label>
+              <div id="sdr-status" class="radio-playback-state" role="status" aria-live="polite" data-i18n="">Connect an RTL-SDR to begin.</div>
+              <div id="sdr-feed-status" class="sdr-feed-status" role="status" aria-live="off" hidden=""></div>
+            </div>
+          </div>
+        </section>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <div id="scene-runtime"></div>
+
+  <!-- Explicit mission choice on a fresh session. Live feeds are not auto-enabled
+       until the visitor asks; shared links skip this surface entirely. It returns
+       every session until "Don't show this again" is ticked — see
+       src/firstRunExperience.js for the full show policy. -->
+  <aside id="first-run-launcher" role="dialog" aria-labelledby="first-run-title" aria-describedby="first-run-description" data-initialized="true" class="visible">
+    <div class="first-run-scanline" aria-hidden="true"></div>
+    <header class="first-run-header">
+      <span class="first-run-kicker" data-i18n="">MISSION CONTROL · FIRST LAUNCH</span>
+    </header>
+    <h2 id="first-run-title" data-i18n="">Choose your first view</h2>
+    <!-- The card's one persuasive line, owner-authored and VERBATIM (2026-08-23)
+         — including the unspaced em dash. The arc it has to carry: this looks
+         like something you should not have access to → the sources are all
+         public → the data is real. Tile subcopy stays purely functional. -->
+    <p id="first-run-description" data-i18n-runtime="">It feels like a forbidden cockpit—then you realize the sources are public and the data is real.</p>
+    <div class="first-run-choices" data-scrollable="false">
+      <button type="button" data-first-run-choice="contacts">
+        <span class="material-symbols-outlined" aria-hidden="true">radar</span>
+        <span><strong data-i18n="">LIVE CONTACTS</strong><small data-i18n="">Aircraft, vessels and nearby intelligence</small></span>
+        <span class="material-symbols-outlined first-run-arrow" aria-hidden="true">arrow_forward</span>
+      </button>
+      <button type="button" data-first-run-choice="space-missions">
+        <span class="material-symbols-outlined" aria-hidden="true">rocket_launch</span>
+        <span><strong data-i18n="">SPACE MISSIONS</strong><small data-i18n="">Launches, spacecraft and orbital context</small></span>
+        <span class="material-symbols-outlined first-run-arrow" aria-hidden="true">arrow_forward</span>
+      </button>
+      <button type="button" data-first-run-choice="environmental">
+        <span class="material-symbols-outlined" aria-hidden="true">local_fire_department</span>
+        <!-- Title text is painted from ENVIRONMENTAL_LABEL_CHOICE at init. -->
+        <!-- Subcopy names BOTH feeds this tile turns on, because the launcher
+             optimizes for the fully configured experience (owner ruling,
+             2026-08-23) — see the mission table in src/firstRunExperience.js. -->
+        <span data-i18n-runtime=""><strong data-first-run-environmental-title="">ENVIRONMENTAL</strong><small>Live earthquakes and active fires, from USGS and NASA</small></span>
+        <span class="material-symbols-outlined first-run-arrow" aria-hidden="true">arrow_forward</span>
+      </button>
+      <button type="button" class="first-run-explore" data-first-run-choice="explore">
+        <span class="material-symbols-outlined" aria-hidden="true">public</span>
+        <span><strong data-i18n="">EXPLORE MANUALLY</strong><small data-i18n="">Begin with a clean globe</small></span>
+        <span class="material-symbols-outlined first-run-arrow" aria-hidden="true">arrow_forward</span>
+      </button>
+    </div>
+    <div class="first-run-footer">
+      <label class="first-run-suppress">
+        <input type="checkbox" data-first-run-suppress="">
+        <span data-i18n="">Don't show this again</span>
+      </label>
+      <span data-i18n="">ESC to dismiss</span>
+    </div>
+    <!-- Kept out of the footer row: it swaps to mission progress and errors, and
+         a live region that also holds layout makes the row jump as it speaks. -->
+    <p class="first-run-note" data-first-run-status="" role="status" aria-live="polite" data-i18n="">Tip: the GEV MIC button in the dock lets you talk to the map.</p>
+  </aside>
+
+  <!-- POWER UP — in-app key setup. Dev-server only: src/keySetup.js removes
+       both the chip and this dialog outright when /api/setup/status is not
+       there to answer (prod builds, LAN visitors). Rows are rendered from
+       that payload, so the key registry lives in src/keySetupCore.mjs alone. -->
+  <!-- Bottom-right HUD row: the POWER UP chip (while keys are missing) and
+       the language picker that src/ui/localePicker.js renders into #locale-picker. -->
+  <div id="corner-actions">
+    
+    <div id="locale-picker" class="locale-picker"><button class="locale-picker-button" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="locale-picker-popup" aria-label="Language: English" title="Change the interface language"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="locale-picker-globe"><path d="M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 3c-2.6 2.5-3.9 5.5-3.9 9s1.3 6.5 3.9 9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 3c2.6 2.5 3.9 5.5 3.9 9s-1.3 6.5-3.9 9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 12h18" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.3 7.5h15.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.3 16.5h15.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="locale-picker-code" translate="no" aria-hidden="true">EN</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="locale-picker-caret"><path d="M7 10h10l-5 5.5Z" fill="currentColor"></path></svg></button><div class="locale-picker-popup" id="locale-picker-popup" hidden=""><div class="locale-picker-heading" id="locale-picker-heading">Interface language</div><ul class="locale-picker-list" id="locale-picker-listbox" role="listbox" aria-labelledby="locale-picker-heading" tabindex="-1"></ul><p class="locale-picker-empty" role="status" hidden="">No matching languages</p></div></div>
+  </div>
+  
+
+  <!-- Intelligence HUD Overlay -->
+  <div id="intel-hud" data-variant="tactical" class="active">
+      <div class="hud-sonar" aria-hidden="true"></div>
+
+      <div class="hud-top-bar">
+        <span class="hud-top-bar-left">TOP SECRET // SI-TK // NOFORN</span>
+        <span class="hud-top-bar-center">KH11-4182</span>
+        <span class="hud-top-bar-right">PAGE 1/1</span>
+      </div>
+
+      <div class="hud-corner hud-top-left">
+        <div class="hud-bracket">┌</div>
+        <div class="hud-content">
+          <div class="hud-classification">TOP SECRET // SI-TK // NOFORN</div>
+          <div class="hud-system">KH11-4182  OPS-4198</div>
+          <div class="hud-mode" id="hud-mode">NORMAL</div>
+          <div class="hud-summary-wrap">
+            <div class="hud-summary-label">SUMMARY</div>
+            <div class="hud-summary" id="hud-summary">NORMAL STREET NEAR FROST BANK TOWER (AUSTIN) 0KM | NORTH AMERICA | ALT 627M | WINDOW 3x2KM | SUN 35° | ONA 60° | UTC-7</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hud-corner hud-top-right">
+        <div class="hud-content" style="text-align:right">
+          <div class="hud-rec"><span id="hud-rec-dot" style="visibility: hidden;">●</span> REC  <span id="hud-timestamp">2026-10-17 21:11:39Z</span></div>
+          <div class="hud-orbital">ORB: 47831  PASS: DESC-260</div>
+        </div>
+        <div class="hud-bracket">┐</div>
+      </div>
+
+      <div class="hud-corner hud-bottom-left">
+        <div class="hud-bracket">└</div>
+        <div class="hud-content">
+          <div id="hud-mgrs">MGRS: 14R PU 2090 4906</div>
+          <div id="hud-latlon">30°16'01.92"N 097°44'35.16"W</div>
+        </div>
+      </div>
+
+      <div class="hud-corner hud-bottom-right">
+        <div class="hud-content" style="text-align:right">
+          <div id="hud-gsd">GSD: 0.23m  NIIRS: 7.1</div>
+          <div id="hud-alt">ALT: 627m   SUN: 34.9° EL</div>
+          <div id="hud-ais-vessel" class="hud-ais-vessel">AIS: --</div>
+        </div>
+        <div class="hud-bracket">┘</div>
+      </div>
+
+      <div class="hud-edge hud-left-edge">
+        <div id="hud-coll">COLL: 21:11:40Z</div>
+        <div id="hud-ona">ONA: 60.0°</div>
+      </div>
+
+      <div class="hud-edge hud-right-edge">
+        <div>BAND: PAN</div>
+        <div>BITS: 11</div>
+        <div>LVL: 1A</div>
+      </div>
+
+      <div class="hud-bottom-bar">
+        <span id="hud-bottom-line">MGRS: 14R PU 2090 4906  LAT: 30°16'01.92"N  LON: 097°44'35.16"W</span>
+      </div>
+    </div>
+
+  <!-- Loading screen -->
+  <div id="loading-screen" class="hidden">
+    <div class="loader-content">
+      <span class="loader-logo brand-logo" data-logo-gaze="" data-logo-src="/logo.svg" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="180 120 775 520" aria-hidden="true" focusable="false">
+  
+  <defs>
+    <style>
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #000;
+        stroke-width: 1px;
+      }
+
+      .cls-1 {
+        fill: #4454727a;
+        stroke: #48b;
+        stroke-width: 10px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #00f6ff;
+      }
+
+      .cls-3 {
+        stroke: #00f6ff;
+        stroke-linecap: round;
+        stroke-width: 6.99px;
+      }
+
+      .cls-4 {
+        opacity: 0.63;
+      }
+    </style>
+  </defs>
+  <path id="outer_eye" class="cls-1" d="M567.5,623c-163.183,0-303.026-99.084-361.823-239.922C257.508,238.76,401.037,135,570,135c166.451,0,308.222,100.7,361.954,241.667C874.771,520.905,733.152,623,567.5,623ZM567,156c124.816,0,226,101.184,226,226S691.816,608,567,608,341,506.816,341,382,442.184,156,567,156ZM816,256.213A272.836,272.836,0,0,1,846,381M793.574,488.677a249.545,249.545,0,0,0,3.239-208.3A303.384,303.384,0,0,0,816,256.213a274.468,274.468,0,0,1-1.516,252.475q-0.927,1.758-1.88,3.5-1.632-2.238-3.306-4.446Q801.826,497.884,793.574,488.677ZM345.5,490.85q-8.055,9.164-15.37,18.966a274.353,274.353,0,0,1-3.748-250.343q7.347,10.012,15.469,19.393A249.512,249.512,0,0,0,345.5,490.85Z"></path>
+  <path id="inner_eye" class="cls-2" d="M568,179.985c107.678,0,194.968,88.655,194.968,198.015S675.678,576.015,568,576.015,373.032,487.36,373.032,378,460.322,179.985,568,179.985Z"></path>
+  <path id="globe" class="cls-3" d="M569.5,499.831A120.331,120.331,0,1,1,689.831,379.5,120.33,120.33,0,0,1,569.5,499.831Zm65.1-50.585c1.225-.4,3.268-2.858,4.492-3.677s3.268-4.083,3.675-5.717,1.227-4.495,1.634-6.126a36.015,36.015,0,0,0,.818-6.135,14.639,14.639,0,0,0-.407-2.855l-3.266,6.127s-4.9,2.04-5.315,3.674-0.817,4.088-.817,4.088a61.248,61.248,0,0,0-2.45,6.133C632.554,446.388,633.372,449.66,634.6,449.246ZM461.011,377.072c0.72-1.105,1.928-6.276,1.6-7.894-0.411-2.037,1.225-6.94,1.225-9.392s4.083-7.358,4.9-9.4,4.491-7.349,6.535-10.623-0.4-2.038-2.449-.809,1.225-3.274,2.449-4.086,8.172-5.72,8.172-5.72,2.449-2.454-.409-7.762c-2.211-4.1,0-4.5,0-6.128a2.43,2.43,0,0,0-1.28-.223c2.129-2.952,4.408-5.788,6.811-8.512A108.871,108.871,0,0,0,494.612,458.6a0.454,0.454,0,0,1,.683-0.363c2.043,0.819,2.449-.4,4.085-0.4s4.086-2.043,4.086-2.043l-1.641-4.9,1.641-6.126,2.041-5.717s0-4.095-2.041-4.5-5.722-4.081-6.946-4.081a10.018,10.018,0,0,1-4.491-1.636c-1.227-.813-3.677-1.634-4.5-2.857a31.144,31.144,0,0,1-2.858-5.314c-0.816-2.039-.409-2.039-3.681-5.715s-2.452-2.863-4.9-4.093-3.265-2.443-5.308-3.263a13.378,13.378,0,0,1-4.5-2.857,4.884,4.884,0,0,0-2.711-1.519,110.041,110.041,0,0,1-2.595-23.808C460.98,378.618,461,377.84,461.011,377.072Zm35.743-78.7a13.8,13.8,0,0,0-1.051,2.589c-0.408,1.638,2.864.416,2.864,0.416L502.239,303l4.5-1.631a13.741,13.741,0,0,1,4.083-4.5c2.857-2.043,2.454-2.452,3.677-4.084s0-.006,5.314-5.732,8.167-5.718,8.167-5.718,1.915-2.1,3.244-3.895A108.986,108.986,0,0,0,496.754,298.368Zm41.024,56.1c-1.224.82-5.715,3.272-6.944,5.315a22.681,22.681,0,0,0-2.859,6.535,31.042,31.042,0,0,0-.408,6.538c0,2.854-.41,4.5,0,6.949s4.5,8.568,6.128,10.623c1.63,2.038,3.674,4.483,5.719,5.713a47.235,47.235,0,0,1,4.9,3.674,4.03,4.03,0,0,0,4.9,1.223c3.272-1.223,6.538-1.223,9.4-2.853s7.353-3.685,7.353-1.231,1.632,4.084,4.082,3.272,6.539-2.858,6.13,0S577,406.764,577,408.4s-0.4,3.265.818,4.495,4.5,3.265,4.5,4.49,0.409,5.311,1.229,6.946,1.639,4.08.823,5.724-2.434,6.123-2.434,6.123-0.779,3.676-.37,4.9a12.683,12.683,0,0,0,3.332,4.906c2.043,2.042,1.771,4.492,2.994,6.124s2.993,6.539,2.993,6.539l1.236,4.088v3.677s7.966-1.231,9.591-1.64a30.673,30.673,0,0,0,8.618-4.9c1.636-1.632,1.311-2.856,3.349-4.488s5.762-4.5,5.762-4.5l-0.387-6.126,4.914-6.544,3.684-3.677s3.267-4.484,2.865-6.128c-0.413-1.628-1.231-9.8-1.231-9.8a37.972,37.972,0,0,1,2.863-5.313c1.224-1.634,1.227-3.678,3.679-5.719a33.109,33.109,0,0,0,5.306-6.126c1.229-1.634,3.681-4.9,4.5-6.127a21.871,21.871,0,0,0,1.635-4.894l-7.355,1.216c-2.45-4.082-9.392-13.073-10.621-15.112a37.04,37.04,0,0,1-2.861-7.76c-0.4-1.634-2.445-6.131-2.856-7.356s-3.27-4.908-4.088-6.128-3.675-2.043-5.309-3.268-11.843-3.27-11.843-3.27-3.129-1.991-4.088-1.226c-4.083,3.269-13.48,1.226-15.523.415s-3.269-2.041-3.269-3.272-1.835-7.143-1.835-7.143-3.985.705-5.213,0.705a20.333,20.333,0,0,1-4.442-1.276s-4.055.379-5.693,1.2a61.205,61.205,0,0,1-6.115,2.438,36.488,36.488,0,0,1-4.488.814c-3.671-1.636-6.529,2.45-7.352,4.079s-2.445,2.454-2.445,4.084S539,353.659,537.778,354.471Zm18.191-54.739-3.128-4.5-3.727,2.045V304.5l-3.839-1.5-1.715,3.674,1.685,2.452L549.114,305v4.129l8.478-1.636,3.164-2.449Zm71.15-12.676c-1.669.869-4.808,3.094-6,1.894-1.227-1.218-4.086-3.423-4.086-3.423,2.448-1.636-4.9-5.212-4.9-5.212l-8.576-1.022h-6.125c-1.227,0-3.681.825-5.723,0.825s-6.943,3.583-8.577,3.994-5.314,2.5-6.944,2.5-4.088,3.086-4.088,3.086-2.856,5.218-.4,4.4,5.717-.858,6.122.367,1.227,3.242,1.636,4.471,6.131,1.618,6.131,1.618a18.551,18.551,0,0,1,2.038-3.683c1.227-1.634,2.452-3.675,2.452-3.675s2.044,4.082,2.452,5.3-0.818,4.908-.818,4.908-4.491,2.852-5.716,2.852-8.175-6.126-8.175-6.126a25.4,25.4,0,0,0-4.489,2.043c-2.856,2.861-5.717,5.31-5.717,5.31a17.057,17.057,0,0,0-4.081,2.046c-1.629,1.222-5.138,1.487-6.117,2.854-2.039,2.863.84,4.9,0.84,4.9l-2.408,3.271-1.548,1.225-5.553,1.221-2.751.616c0.4,1.227,1.258,5.105,1.258,5.105s-1.87,6.943,0,6.943c0,0,4.276,1.64,5.5,1.64s2.625,0.4,4.265-1.227a59.861,59.861,0,0,0,5.156-6.538,8.047,8.047,0,0,1,4.49-3.267c2.454-.82,3-2.047,4.231-2.452s6.47-1.229,6.47-1.229,3.709,2.043,4.932,2.861c0.573,0.386-1.393,1.658,6.086,2.907V331.6l3.7-.411-4.207-3.264-0.44-.1-4.778-4.8-0.419-3.672s4.861,2.862,6.493,3.672a43.671,43.671,0,0,1,4.81,3.272l1.783,5.719,2.4,4.5s-1.87-5.722,0-5.722c0,0,5.158.405,6.381,0a36.253,36.253,0,0,0,5.237-1.632c1.636-.815-0.648-3.68.986-5.721a10.385,10.385,0,0,1,4.981-3.27c1.23-.405,5.35-2.447,5.35-2.447l4.522,0.82c-2.041,1.627-4.486,4.077-2.85,3.676s5.313,1.63,6.949,2.855,0.413,4.087.413,4.087-4.5-.411-7.355-0.815a29.263,29.263,0,0,0-7.351.4l-3.677,2.043s-2.454.816-2.045,2.861,2.045,4.5,3.679,6.535,2.858,4.5,4.085,3.675,5.309-3.265,5.309-3.265a12.784,12.784,0,0,0-.409,4.9,30.6,30.6,0,0,1,.409,4.9s-4.082,0-2.861.822,2.967,3.905,3.681,4.9c4.083,5.717,12.664,18.383,13.482,20.015s0.44,4.126,1.631,5.31c2.454,2.45,7.352,0,8.578-.817s5.311-2.863,6.536-4.082,0.818-.822,3.272-2.454,4.079-2.856,2.859-4.085-3.68-5.725-3.68-5.725c-3.676.825-7.351-1.222-7.351-2.445s-3.269-6.124-3.269-6.124,0.407-.82,3.269.809,5.306,4.908,7.759,4.908,3.678,0.819,6.537,2.453,4.085,3.672,5.719,4.492,4.086,4.086,4.086,4.086,2.447,5.715,2.859,7.358c0.358,1.421,2.277,5.345,2.754,7.132,0.166-2.461.281-4.937,0.281-7.44A108.8,108.8,0,0,0,627.119,287.056ZM548.884,304.5l0.333,0.133-0.333.365v-0.5Z" transform="translate(0.00 0.00)"></path>
+  <path id="globe_cage" class="cls-4" d="M569.5,576.491c-106.968,0-193.988-89.044-193.988-198.491S462.532,179.509,569.5,179.509,763.488,268.553,763.488,378,676.468,576.491,569.5,576.491ZM578.4,368.9h76.237a314.2,314.2,0,0,0-11.945-78.026H578.4V368.9ZM654.634,387.1H578.4V464.94h64.345A314.251,314.251,0,0,0,654.634,387.1Zm90.813,0H671.861a333.4,333.4,0,0,1-11.206,77.836h63.112A182.117,182.117,0,0,0,745.447,387.1Zm-32.528,95.444H655.363a288.421,288.421,0,0,1-32.3,67.191A177.214,177.214,0,0,0,712.919,482.548Zm-115.67,73.48a263.416,263.416,0,0,0,39.828-73.48H578.4v75.476A173.846,173.846,0,0,0,597.249,556.028ZM560.6,558.036V482.548H497.674a263.837,263.837,0,0,0,39.135,72.575A174.279,174.279,0,0,0,560.6,558.036ZM510.434,547.83a289.038,289.038,0,0,1-31.078-65.282H426.1A177.5,177.5,0,0,0,510.434,547.83Zm-95.208-82.89H474.1A333.353,333.353,0,0,1,462.878,387.1H393.555A182.127,182.127,0,0,0,415.226,464.94ZM393.555,368.9h69.323a333.4,333.4,0,0,1,11.268-78.026H415.332A182.13,182.13,0,0,0,393.555,368.9Zm32.676-95.633h53.185a289.064,289.064,0,0,1,31-65.087A177.487,177.487,0,0,0,426.231,273.263Zm134.372-75.3a174.068,174.068,0,0,0-23.8,2.914,263.8,263.8,0,0,0-39.06,72.384H560.6v-75.3Zm0,92.905H492.051A314.088,314.088,0,0,0,480.106,368.9h80.5V290.87Zm-80.5,96.234A314.1,314.1,0,0,0,492,464.94h68.6V387.1h-80.5ZM578.4,197.977v75.286h58.612a263.412,263.412,0,0,0-39.751-73.289A174.011,174.011,0,0,0,578.4,197.977Zm44.672,8.286a288.6,288.6,0,0,1,32.231,67h57.491A177.213,177.213,0,0,0,623.069,206.263Zm100.6,84.607H660.6A333.3,333.3,0,0,1,671.861,368.9h73.586A182.129,182.129,0,0,0,723.667,290.87Z" transform="translate(0.00 0.00)"></path>
+</svg></span>
+      <h2 translate="no">GOD'S EYE <span class="title-accent">VIEW</span></h2>
+      <p class="loader-status" data-i18n="">Flying to Austin, TX...</p>
+    </div>
+  </div>
+
+
+
+<div id="nm-modal-container">
+    <!-- ═════════ OPERATOR MANUAL / HELP MODAL ═════════ -->
+    <div id="nm-help-modal" class="nm-modal-backdrop" hidden="">
+      <div class="nm-modal-dialog">
+        <div class="nm-modal-glow"></div>
+        <div class="nm-modal-header">
+          <div class="nm-modal-tag" data-i18n="help_modal_subtitle">N&amp;M STUDIO // GLOBAL RECONNAISSANCE CONSOLE GUIDE</div>
+          <h2 class="nm-modal-title" data-i18n="help_modal_title">HƯỚNG DẪN TÁC CHIẾN &amp; VẬN HÀNH HỆ THỐNG</h2>
+          <button type="button" class="nm-modal-close-btn" data-close-target="nm-help-modal" aria-label="Close">×</button>
+        </div>
+        <div class="nm-modal-body">
+          <section class="nm-guide-section">
+            <h3 class="nm-guide-heading highlight" data-i18n="help_why_off_title">1. VÌ SAO MỘT SỐ TÍNH NĂNG MẶC ĐỊNH ĐANG TẮT (OFF)?</h3>
+            <p data-i18n="help_why_off_desc">Để bảo vệ băng thông mạng và giữ cho đồ họa 3D WebGL luôn mượt mà 60 FPS trên mọi thiết bị, hệ thống chỉ kích hoạt trước các dữ liệu cơ bản. Bạn có thể tự do bật/tắt tức thì bất kỳ lớp dữ liệu nào bạn muốn qua menu bên trái hoặc dock dưới đáy màn hình!</p>
+          </section>
+
+          <section class="nm-guide-section">
+            <h3 class="nm-guide-heading" data-i18n="help_layers_guide_title">2. CÁCH BẬT CÁC LỚP DỮ LIỆU TRỰC TIẾP (LIVE FEEDS)</h3>
+            <ul class="nm-guide-list">
+              <li data-i18n="help_layer_flight">✈️ Chuyến bay (Flights): Hàng chục ngàn máy bay thương mại &amp; quân sự đang bay realtime (ADS-B).</li>
+              <li data-i18n="help_layer_ship">🚢 Tàu biển (Vessels): Tàu hàng, tàu dầu và du thuyền toàn cầu qua định vị AIS.</li>
+              <li data-i18n="help_layer_sat">🛰️ Vệ tinh (Satellites): Quỹ đạo trạm không gian ISS, kính viễn vọng và vệ tinh thời tiết.</li>
+              <li data-i18n="help_layer_cctv">📹 Camera giao thông (CCTV): Xem video camera đường phố trực tiếp chiếu thẳng vào mô hình 3D.</li>
+              <li data-i18n="help_layer_weather">🌦️ Thời tiết &amp; Gió: Bản đồ luồng gió toàn cầu, mây vệ tinh và radar bão thời gian thực.</li>
+            </ul>
+          </section>
+
+          <section class="nm-guide-section">
+            <h3 class="nm-guide-heading" data-i18n="help_hotkeys_title">3. BẢNG PHÍM TẮT ĐIỀU KHIỂN NHANH (TACTICAL HOTKEYS)</h3>
+            <ul class="nm-guide-list hotkeys-grid">
+              <li data-i18n="help_hotkey_1_7">Phím 1 - 7: Chuyển đổi bộ lọc quang học (Bình thường, CRT xanh, Night-Vision NVG, Hồng ngoại FLIR, Noir, Anime, Tuyết)</li>
+              <li data-i18n="help_hotkey_c">Phím C: Nhập buồng lái máy bay (Cockpit Mode) để bay lướt sát địa hình thực tế</li>
+              <li data-i18n="help_hotkey_d">Phím D: Bật/tắt lưới phát hiện mục tiêu (Target Detection Mesh)</li>
+              <li data-i18n="help_hotkey_h">Phím H: Ẩn/Hiện toàn bộ bảng điều khiển giao diện (Clean View)</li>
+              <li data-i18n="help_hotkey_mouse">Chuột trái: Xoay địa cầu / Nhấn chọn mục tiêu | Chuột phải &amp; Cuộn: Nghiêng góc nhìn 3D (Tilt) &amp; Phóng to</li>
+            </ul>
+          </section>
+
+          <section class="nm-guide-section">
+            <h3 class="nm-guide-heading" data-i18n="help_power_up_title">4. MỞ KHÓA ĐỊA HÌNH 3D NÂNG CAO (POWER UP)</h3>
+            <p data-i18n="help_power_up_desc">Nhấn nút 'POWER UP' ở góc dưới cùng bên phải để nhập Cesium ion Token miễn phí hoặc Google Maps Key để mở địa hình 3D Photorealistic sắc nét đến từng tòa nhà!</p>
+          </section>
+        </div>
+        <div class="nm-modal-footer">
+          <span class="nm-modal-hotline">OPERATOR HOTLINE / ZALO: <strong>0985 578 385</strong></span>
+          <button type="button" class="nm-action-confirm-btn" data-close-target="nm-help-modal" data-i18n="close_btn">ĐÓNG LẠI</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═════════ VALUE-FIRST COFFEE & COMMUNITY MODAL ═════════ -->
+    <div id="nm-coffee-modal" class="nm-modal-backdrop" hidden="">
+      <div class="nm-modal-dialog coffee-dialog">
+        <div class="nm-modal-glow coffee-glow"></div>
+        <div class="nm-modal-header">
+          <div class="nm-modal-tag" data-i18n="coffee_modal_subtitle">KHÁM PHÁ GIÁ TRỊ DỰ ÁN &amp; TIẾP NĂNG LƯỢNG CHO SỰ SÁNG TẠO</div>
+          <h2 class="nm-modal-title coffee-title">☕ <span data-i18n="coffee_modal_title">ĐỒNG HÀNH CÙNG N&amp;M STUDIO</span></h2>
+          <button type="button" class="nm-modal-close-btn" data-close-target="nm-coffee-modal" aria-label="Close">×</button>
+        </div>
+        
+        <div class="nm-modal-body">
+          <!-- 3 Value & Academic Pillars -->
+          <div class="nm-value-grid">
+            <div class="nm-value-card">
+              <span class="nm-value-icon">🛰️</span>
+              <span class="nm-value-title" data-i18n="val_title_space">HỌC THUẬT &amp; KHÔNG GIAN</span>
+              <p class="nm-value-desc" data-i18n="val_desc_space">Trực quan hóa quỹ đạo trạm ISS, vệ tinh thời tiết và cơ học thiên thể 3D sống động.</p>
+            </div>
+            <div class="nm-value-card">
+              <span class="nm-value-icon">✈️</span>
+              <span class="nm-value-title" data-i18n="val_title_osint">TÌNH BÁO MỞ (OSINT)</span>
+              <p class="nm-value-desc" data-i18n="val_desc_osint">Theo dõi hàng chục ngàn chuyến bay ADS-B realtime, lướt buồng lái máy bay qua địa hình số.</p>
+            </div>
+            <div class="nm-value-card">
+              <span class="nm-value-icon">🇻🇳</span>
+              <span class="nm-value-title" data-i18n="val_title_vn">DỰ ÁN KỸ SƯ VIỆT</span>
+              <p class="nm-value-desc" data-i18n="val_desc_vn">Dự án công nghệ phi lợi nhuận do anh Vũ Trọng Nghĩa cùng cộng sự tâm huyết xây dựng cho cộng đồng.</p>
+            </div>
+          </div>
+
+          <!-- Experience First Message -->
+          <div class="nm-exp-first-box">
+            <span class="nm-exp-icon">💡</span>
+            <div>
+              <strong data-i18n="exp_first_lead">Trải nghiệm trước - Tự nguyện đồng hành sau:</strong>
+              <div data-i18n="exp_first_desc">Bạn hãy cứ thỏa sức bay lượn, quan sát Trái Đất và trải nghiệm mọi tính năng hoàn toàn miễn phí. Khi bạn cảm nhận được giá trị và sự tận tụy trong từng dòng code... thì một tách cà phê sẽ là ngọn lửa tiếp thêm sức mạnh cho đội ngũ duy trì máy chủ!</div>
+            </div>
+          </div>
+
+          <!-- Prominent Enter Web CTA -->
+          <button type="button" class="nm-cta-enter-btn" data-close-target="nm-coffee-modal">
+            <span data-i18n="cta_enter_web">🚀 TÔI ĐÃ HIỂU, ĐỂ TÔI VÀO TRẢI NGHIỆM WEB NGAY!</span>
+          </button>
+
+          <!-- Payment QR Switching Tabs -->
+          <div class="nm-pay-tabs">
+            <button type="button" class="nm-pay-tab-btn active" data-pay-target="pay-techcom" data-i18n="coffee_tab_techcom">TECHCOMBANK (VIETQR)</button>
+            <button type="button" class="nm-pay-tab-btn" data-pay-target="pay-momo" data-i18n="coffee_tab_momo">VÍ MOMO / NAPAS</button>
+          </div>
+
+          <div class="nm-pay-card-container">
+            <!-- Techcombank Panel -->
+            <div id="pay-techcom" class="nm-pay-panel active">
+              <div class="nm-qr-frame">
+                <img src="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/donate-techcom.jpg" alt="Techcombank VietQR N&amp;M Studio" class="nm-qr-img">
+                <span class="qr-crosshair top-left"></span>
+                <span class="qr-crosshair top-right"></span>
+                <span class="qr-crosshair bottom-left"></span>
+                <span class="qr-crosshair bottom-right"></span>
+              </div>
+              <div class="nm-pay-details">
+                <div class="pay-detail-row">
+                  <span class="pay-label">NGÂN HÀNG:</span>
+                  <span class="pay-val">TECHCOMBANK (TCB)</span>
+                </div>
+                <div class="pay-detail-row">
+                  <span class="pay-label">CHỦ TÀI KHOẢN:</span>
+                  <span class="pay-val">VŨ TRỌNG NGHĨA</span>
+                </div>
+                <p class="pay-hint" data-i18n="coffee_scan_hint">Mở ứng dụng Ngân hàng hoặc MoMo để quét mã QR chuyển khoản nhanh</p>
+              </div>
+            </div>
+
+            <!-- MoMo Panel -->
+            <div id="pay-momo" class="nm-pay-panel" hidden="">
+              <div class="nm-qr-frame">
+                <img src="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/donate-momo.jpg" alt="MoMo QR N&amp;M Studio" class="nm-qr-img">
+                <span class="qr-crosshair top-left"></span>
+                <span class="qr-crosshair top-right"></span>
+                <span class="qr-crosshair bottom-left"></span>
+                <span class="qr-crosshair bottom-right"></span>
+              </div>
+              <div class="nm-pay-details">
+                <div class="pay-detail-row">
+                  <span class="pay-label">HỆ THỐNG:</span>
+                  <span class="pay-val">VÍ MOMO / NAPAS 247</span>
+                </div>
+                <div class="pay-detail-row">
+                  <span class="pay-label">CHỦ TÀI KHOẢN:</span>
+                  <span class="pay-val">VŨ TRỌNG NGHĨA</span>
+                </div>
+                <div class="pay-detail-row">
+                  <span class="pay-label">SỐ ĐIỆN THOẠI:</span>
+                  <span class="pay-val">0985 578 385</span>
+                </div>
+                <p class="pay-hint" data-i18n="coffee_scan_hint">Mở ứng dụng Ngân hàng hoặc MoMo để quét mã QR chuyển khoản nhanh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nm-modal-footer">
+          <a href="https://zalo.me/0985578385" target="_blank" rel="noopener noreferrer" class="nm-zalo-direct-link" title="Nhắn tin qua Zalo">
+            💬 <span data-i18n="coffee_hotline_note">Hotline / Zalo kết nối &amp; giao lưu: 0985 578 385</span>
+          </a>
+          <button type="button" class="nm-action-confirm-btn" data-close-target="nm-coffee-modal" data-i18n="close_btn">ĐÓNG LẠI</button>
+        </div>
+      </div>
+    </div>
+  </div><div id="cesium-credits"><div class="cesium-widget-credits"><div class="cesium-credit-logoContainer" style="display: inline;"><div class="cesium-credit-wrapper" style="display: inline;"><a href="https://cesium.com/" target="_blank"><img src="./N&amp;Mstudio_ GOD&#39;s EYE VIEW · Global Intelligence Console_files/ion-credit.png" style="vertical-align: -7px" title="Cesium ion"></a></div></div><div class="cesium-credit-textContainer" style="display: inline;"><div class="cesium-credit-wrapper" style="display: inline;"><a href="https://www.esri.com/" rel="noopener" target="_blank">Powered by Esri</a></div></div><a class="cesium-credit-expand-link" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="cesium-credit-lightbox" aria-expanded="false" data-gev-keyboard-ready="true" style="display: inline;">Data attribution</a></div></div><div id="orbit-indicator"><span class="orbit-icon">↻</span> ORBIT</div><canvas id="cockpit-cloud-effects" aria-hidden="true"></canvas><div class="gev-screen-whiteboard"><svg class="gev-screen-whiteboard-svg" preserveAspectRatio="none"><defs>
+    <filter id="gev-sketch" x="-20%" y="-20%" width="140%" height="140%">
+      <feturbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="7" result="n"></feturbulence>
+      <fedisplacementmap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G"></fedisplacementmap>
+    </filter></defs></svg></div><aside id="v3-context-inspector" class="v3-context-inspector" aria-label="Context Inspector">
+        <div class="v3-inspector-header">
+          <div class="v3-inspector-title">
+            <span class="v3-inspector-kicker">SPATIAL INTELLIGENCE</span>
+            <h3>IMAGERY &amp; PROVENANCE</h3>
+          </div>
+          <button type="button" class="v3-inspector-close" aria-label="Close Inspector">✕</button>
+        </div>
+        <div class="v3-inspector-body">
+          <div class="v3-inspector-section">
+            <span class="section-label">PRIMARY BASEMAP</span>
+            <div class="provenance-card">
+              <p><strong>Source:</strong> Esri World Imagery / Sentinel-2 / NASA</p>
+              <p><strong>Resolution:</strong> Sub-meter to 15m optical multi-spectrum</p>
+              <p><strong>Capture Date:</strong> Not provided by source</p>
+              <p><strong>Integrity:</strong> Unaltered Public Remote Sensing</p>
+            </div>
+          </div>
+          <div class="v3-inspector-section">
+            <span class="section-label">OPERATOR HOTLINE</span>
+            <p style="font-size: 11px; color: var(--ge-text-secondary); margin: 6px 0;">
+              Chỉ huy điều hành &amp; hỗ trợ kỹ thuật: <strong>Vũ Trọng Nghĩa</strong><br>
+              Zalo / Hotline: <strong>0985 578 385</strong>
+            </p>
+          </div>
+        </div>
+      </aside><div id="v3-reticle" class="v3-reticle state-idle">
+        <div class="reticle-glyph">·</div>
+        <div class="reticle-label"></div>
+      </div><div id="v3-command-palette" class="v3-command-palette-backdrop" hidden="" style="display: none;">
+        <div class="v3-palette-modal" role="dialog" aria-modal="true" aria-label="Command Palette">
+          <div class="v3-palette-search">
+            <span class="v3-palette-icon">⌘</span>
+            <input type="text" id="v3-palette-input" placeholder="Search any location, coordinates, or command..." autocomplete="off" spellcheck="false">
+            <kbd class="v3-palette-kbd">ESC</kbd>
+          </div>
+          <ul id="v3-palette-list" class="v3-palette-list" role="listbox"></ul>
+        </div>
+      </div></body><savior-host style="all: unset; position: absolute; top: 0; left: 0; z-index: 99999999999999; display: block !important; overflow: unset"><template shadowrootmode="open"><style>@import "chrome-extension://jdfkmiabjpfjacifcmihfdjhpnjpiick/css/content-script.css";
+</style><div class="body"><div class="turn-lights-overlay"></div><toasts id="toasts-container"></toasts></div></template></savior-host></html>
